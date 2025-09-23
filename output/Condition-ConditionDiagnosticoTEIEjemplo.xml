@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Condition xmlns="http://hl7.org/fhir">
+  <id value="ConditionDiagnosticoTEIEjemplo"/>
+  <meta>
+    <profile value="https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ConditionDiagnosticoLE"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Condition ConditionDiagnosticoTEIEjemplo</b></p><a name="ConditionDiagnosticoTEIEjemplo"> </a><a name="hcConditionDiagnosticoTEIEjemplo"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="https://interoperabilidad.minsal.cl/fhir/ig/tei/0.2.1/StructureDefinition-ConditionDiagnosticoLE.html">Condition Diagnostico LE</a></p></div><p><b>clinicalStatus</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/condition-clinical active}">Active</span></p><p><b>verificationStatus</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/condition-ver-status provisional}">Provisional</span></p><p><b>category</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/condition-category encounter-diagnosis}">Diagnostico del encuentro</span></p><p><b>code</b>: <span title="Codes:{http://hl7.org/fhir/sid/icd-10 L20}">Dermatitis atópica</span></p><p><b>subject</b>: <a href="Patient/07216d5b-1662-46ac-a041-20a40f2b3881">Patient/07216d5b-1662-46ac-a041-20a40f2b3881</a></p><p><b>encounter</b>: <a href="Encounter/00e2816a-2737-478f-8a48-796c2e0a794c">Encounter/00e2816a-2737-478f-8a48-796c2e0a794c</a></p></div>
+  </text>
+  <clinicalStatus>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/condition-clinical"/>
+      <code value="active"/>
+      <display value="Active"/>
+    </coding>
+    <text value="Active"/>
+  </clinicalStatus>
+  <verificationStatus>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/condition-ver-status"/>
+      <code value="provisional"/>
+      <display value="Provisional"/>
+    </coding>
+    <text value="Provisional"/>
+  </verificationStatus>
+  <category>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/condition-category"/>
+      <code value="encounter-diagnosis"/>
+      <display value="Encounter Diagnosis"/>
+    </coding>
+    <text value="Diagnostico del encuentro"/>
+  </category>
+  <code>
+    <coding>
+      <system value="http://hl7.org/fhir/sid/icd-10"/>
+      <code value="L20"/>
+      <display value="Dermatitis atópica"/>
+    </coding>
+    <text value="Dermatitis atópica"/>
+  </code>
+  <subject>
+    <reference value="Patient/07216d5b-1662-46ac-a041-20a40f2b3881"/>
+  </subject>
+  <encounter>
+    <reference value="Encounter/00e2816a-2737-478f-8a48-796c2e0a794c"/>
+  </encounter>
+</Condition>

@@ -1,0 +1,88 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://interoperabilidad.minsal.cl/fhir/ig/tei-aps-secundario/ServiceRequest/SolicitudInterconsultaEjemplo> a fhir:ServiceRequest ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "SolicitudInterconsultaEjemplo"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ServiceRequestLE"^^xsd:anyURI ;
+       fhir:link <https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ServiceRequestLE>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ServiceRequest SolicitudInterconsultaEjemplo</b></p><a name=\"SolicitudInterconsultaEjemplo\"> </a><a name=\"hcSolicitudInterconsultaEjemplo\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://interoperabilidad.minsal.cl/fhir/ig/tei/0.2.1/StructureDefinition-ServiceRequestLE.html\">ServiceRequest LE</a></p></div><p><b>Estado Interconsulta Codigo</b>: <span title=\"Codes:{https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSEstadoInterconsulta 1}\">A la espera de referencia</span></p><p><b>identifier</b>: 123</p><p><b>status</b>: Draft</p><p><b>intent</b>: Order</p><p><b>category</b>: <span title=\"Codes:{https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSModalidadAtencionCodigo 1}\">Presencial</span></p><p><b>priority</b>: Routine</p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 103696004}\">Interconsulta para atención presencial</span></p><p><b>subject</b>: <a href=\"Bundle-BundleEnriquecidoEjemplo.html#Patient_EjemploPatientLE\">Bundle: type = message; timestamp = 2025-07-24 10:21:55-0400</a></p><p><b>encounter</b>: <a href=\"Encounter-EncounterIniciarTEIEjemplo.html\">Encounter: extension = Derivación; identifier = 13696133 (use: official, ); status = finished; class = Presencial (Modalidad Atencion Codigo#1); period = 2025-07-24 10:19:44-0400 --&gt; 2025-07-24 10:21:53-0400</a></p><p><b>authoredOn</b>: 2024-12-10 09:00:00+0000</p><p><b>requester</b>: <a href=\"Bundle-BundleEnriquecidoEjemplo.html#PractitionerRole_PractitionerRoleReferenciador\">Bundle: type = message; timestamp = 2025-07-24 10:21:55-0400</a></p><p><b>locationCode</b>: <span title=\"Codes:{https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSDestinoReferenciaCodigo 1}\">Nivel Secundario</span></p><p><b>reasonCode</b>: <span title=\"Codes:{https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSDerivadoParaCodigo 1}\">Confirmación</span></p><p><b>supportingInfo</b>: <a href=\"QuestionnaireResponse-QuestionnaireResponseIniciarTEIEjemplo.html\">Response to Questionnaire '-&gt;Motivo de Derivación' about '-&gt;Patient/07216d5b-1662-46ac-a041-20a40f2b3881'</a></p></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ExtensionEstadoInterconsultaCodigoLE"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [ fhir:v "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSEstadoInterconsulta"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "1" ] ;
+         fhir:display [ fhir:v "A la espera de referencia" ]
+       ] )
+     ]
+  ] ) ; # 
+  fhir:identifier ( [
+     fhir:value [ fhir:v "123" ]
+  ] ) ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:intent [ fhir:v "order"] ; # 
+  fhir:category ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSModalidadAtencionCodigo"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "1" ] ;
+       fhir:display [ fhir:v "Presencial" ]
+     ] )
+  ] ) ; # 
+  fhir:priority [ fhir:v "routine"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       a sct:103696004 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "103696004" ]
+     ] ) ;
+     fhir:text [ fhir:v "Interconsulta para atención presencial" ]
+  ] ; # 
+  fhir:subject [
+     fhir:link <https://interoperabilidad.minsal.cl/fhir/ig/tei-aps-secundario/Patient/EjemploPatientLE> ;
+     fhir:reference [ fhir:v "Patient/EjemploPatientLE" ]
+  ] ; # 
+  fhir:encounter [
+     fhir:link <https://interoperabilidad.minsal.cl/fhir/ig/tei-aps-secundario/Encounter/EncounterIniciarTEIEjemplo> ;
+     fhir:reference [ fhir:v "Encounter/EncounterIniciarTEIEjemplo" ]
+  ] ; # 
+  fhir:authoredOn [ fhir:v "2024-12-10T09:00:00Z"^^xsd:dateTime] ; # 
+  fhir:requester [
+     fhir:link <https://interoperabilidad.minsal.cl/fhir/ig/tei-aps-secundario/PractitionerRole/PractitionerRoleReferenciador> ;
+     fhir:reference [ fhir:v "PractitionerRole/PractitionerRoleReferenciador" ]
+  ] ; # 
+  fhir:locationCode ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSDestinoReferenciaCodigo"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "1" ] ;
+       fhir:display [ fhir:v "Nivel Secundario" ]
+     ] )
+  ] ) ; # 
+  fhir:reasonCode ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSDerivadoParaCodigo"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "1" ] ;
+       fhir:display [ fhir:v "Confirmación" ]
+     ] )
+  ] ) ; # 
+  fhir:supportingInfo ( [
+     fhir:link <https://interoperabilidad.minsal.cl/fhir/ig/tei-aps-secundario/QuestionnaireResponse/QuestionnaireResponseIniciarTEIEjemplo> ;
+     fhir:reference [ fhir:v "QuestionnaireResponse/QuestionnaireResponseIniciarTEIEjemplo" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

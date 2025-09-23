@@ -1,0 +1,72 @@
+[
+  {
+    "id" : "CSPrevision",
+    "type" : "CodeSystem",
+    "url" : "https://interoperabilidad.minsal.cl/fhir/ig/tei-aps-secundario/CodeSystem/CSPrevision",
+    "version" : "0.1.0",
+    "name" : "CSPrevision"
+  },
+  {
+    "id" : "CSTipoEventoTEI",
+    "type" : "CodeSystem",
+    "url" : "https://interoperabilidad.minsal.cl/fhir/ig/tei-aps-secundario/CodeSystem/CSTipoEventoTEI",
+    "version" : "0.1.0",
+    "name" : "CSTipoEventoTEI"
+  },
+  {
+    "id" : "fhir.tei-aps-secundario",
+    "type" : "ImplementationGuide",
+    "url" : "https://interoperabilidad.minsal.cl/fhir/ig/tei-aps-secundario/ImplementationGuide/fhir.tei-aps-secundario",
+    "version" : "0.1.0",
+    "name" : "IGMensajeTEIAPSanivelsecundario"
+  },
+  {
+    "id" : "BundleCollection",
+    "type" : "StructureDefinition",
+    "url" : "https://interoperabilidad.minsal.cl/fhir/ig/tei-aps-secundario/StructureDefinition/BundleCollection",
+    "version" : "0.1.0",
+    "name" : "BundleCollection"
+  },
+  {
+    "id" : "BundleEnriquecido",
+    "type" : "StructureDefinition",
+    "url" : "https://interoperabilidad.minsal.cl/fhir/ig/tei-aps-secundario/StructureDefinition/BundleEnriquecido",
+    "version" : "0.1.0",
+    "name" : "BundleEnriquecido"
+  },
+  {
+    "id" : "ExtensionBoolPrais",
+    "type" : "StructureDefinition",
+    "url" : "https://interoperabilidad.minsal.cl/fhir/ig/tei-aps-secundario/StructureDefinition/ExtensionBoolPrais",
+    "version" : "0.1.0",
+    "name" : "ExtensionBoolPrais"
+  },
+  {
+    "id" : "MessageHeaderTEI",
+    "type" : "StructureDefinition",
+    "url" : "https://interoperabilidad.minsal.cl/fhir/ig/tei-aps-secundario/StructureDefinition/MessageHeaderTEI",
+    "version" : "0.1.0",
+    "name" : "MessageHeaderTEI"
+  },
+  {
+    "id" : "Prevision",
+    "type" : "StructureDefinition",
+    "url" : "https://interoperabilidad.minsal.cl/fhir/ig/tei-aps-secundario/StructureDefinition/Prevision",
+    "version" : "0.1.0",
+    "name" : "Prevision"
+  },
+  {
+    "id" : "VSPrevision",
+    "type" : "ValueSet",
+    "url" : "https://interoperabilidad.minsal.cl/fhir/ig/tei-aps-secundario/ValueSet/VSPrevision",
+    "version" : "0.1.0",
+    "name" : "VSPrevision"
+  },
+  {
+    "id" : "VSTipoEventoTEI",
+    "type" : "ValueSet",
+    "url" : "https://interoperabilidad.minsal.cl/fhir/ig/tei-aps-secundario/ValueSet/VSTipoEventoTEI",
+    "version" : "0.1.0",
+    "name" : "VSTipoEventoTEI"
+  }
+]

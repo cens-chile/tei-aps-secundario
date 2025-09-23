@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ServiceRequest xmlns="http://hl7.org/fhir">
+  <id value="SolicitudInterconsultaEjemplo"/>
+  <meta>
+    <profile value="https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ServiceRequestLE"/>
+  </meta>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ServiceRequest SolicitudInterconsultaEjemplo</b></p><a name="SolicitudInterconsultaEjemplo"> </a><a name="hcSolicitudInterconsultaEjemplo"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="https://interoperabilidad.minsal.cl/fhir/ig/tei/0.2.1/StructureDefinition-ServiceRequestLE.html">ServiceRequest LE</a></p></div><p><b>Estado Interconsulta Codigo</b>: <span title="Codes:{https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSEstadoInterconsulta 1}">A la espera de referencia</span></p><p><b>identifier</b>: 123</p><p><b>status</b>: Draft</p><p><b>intent</b>: Order</p><p><b>category</b>: <span title="Codes:{https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSModalidadAtencionCodigo 1}">Presencial</span></p><p><b>priority</b>: Routine</p><p><b>code</b>: <span title="Codes:{http://snomed.info/sct 103696004}">Interconsulta para atención presencial</span></p><p><b>subject</b>: <a href="Bundle-BundleEnriquecidoEjemplo.html#Patient_EjemploPatientLE">Bundle: type = message; timestamp = 2025-07-24 10:21:55-0400</a></p><p><b>encounter</b>: <a href="Encounter-EncounterIniciarTEIEjemplo.html">Encounter: extension = Derivación; identifier = 13696133 (use: official, ); status = finished; class = Presencial (Modalidad Atencion Codigo#1); period = 2025-07-24 10:19:44-0400 --&gt; 2025-07-24 10:21:53-0400</a></p><p><b>authoredOn</b>: 2024-12-10 09:00:00+0000</p><p><b>requester</b>: <a href="Bundle-BundleEnriquecidoEjemplo.html#PractitionerRole_PractitionerRoleReferenciador">Bundle: type = message; timestamp = 2025-07-24 10:21:55-0400</a></p><p><b>locationCode</b>: <span title="Codes:{https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSDestinoReferenciaCodigo 1}">Nivel Secundario</span></p><p><b>reasonCode</b>: <span title="Codes:{https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSDerivadoParaCodigo 1}">Confirmación</span></p><p><b>supportingInfo</b>: <a href="QuestionnaireResponse-QuestionnaireResponseIniciarTEIEjemplo.html">Response to Questionnaire '-&gt;Motivo de Derivación' about '-&gt;Patient/07216d5b-1662-46ac-a041-20a40f2b3881'</a></p></div>
+  </text>
+  <extension url="https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ExtensionEstadoInterconsultaCodigoLE">
+    <valueCodeableConcept>
+      <coding>
+        <system value="https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSEstadoInterconsulta"/>
+        <code value="1"/>
+        <display value="A la espera de referencia"/>
+      </coding>
+    </valueCodeableConcept>
+  </extension>
+  <identifier>
+    <value value="123"/>
+  </identifier>
+  <status value="draft"/>
+  <intent value="order"/>
+  <category>
+    <coding>
+      <system value="https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSModalidadAtencionCodigo"/>
+      <code value="1"/>
+      <display value="Presencial"/>
+    </coding>
+  </category>
+  <priority value="routine"/>
+  <code>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="103696004"/>
+    </coding>
+    <text value="Interconsulta para atención presencial"/>
+  </code>
+  <subject>
+    <reference value="Patient/EjemploPatientLE"/>
+  </subject>
+  <encounter>
+    <reference value="Encounter/EncounterIniciarTEIEjemplo"/>
+  </encounter>
+  <authoredOn value="2024-12-10T09:00:00Z"/>
+  <requester>
+    <reference value="PractitionerRole/PractitionerRoleReferenciador"/>
+  </requester>
+  <locationCode>
+    <coding>
+      <system value="https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSDestinoReferenciaCodigo"/>
+      <code value="1"/>
+      <display value="Nivel Secundario"/>
+    </coding>
+  </locationCode>
+  <reasonCode>
+    <coding>
+      <system value="https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSDerivadoParaCodigo"/>
+      <code value="1"/>
+      <display value="Confirmación"/>
+    </coding>
+  </reasonCode>
+  <supportingInfo>
+    <reference value="QuestionnaireResponse/QuestionnaireResponseIniciarTEIEjemplo"/>
+  </supportingInfo>
+</ServiceRequest>

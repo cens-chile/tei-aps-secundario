@@ -1,0 +1,4 @@
+URL,Version,Status,OIDs,Name,Title,Descriptino,Uses,Used,Sources
+http://hl7.org/fhir/ValueSet/fm-status,4.0.1,draft,"2.16.840.1.113883.4.642.3.592",FinancialResourceStatusCodes,Financial Resource Status Codes,"This value set includes Status codes.","StructureDefinition/Prevision","hl7.fhir.r4.core"
+https://interoperabilidad.minsal.cl/fhir/ig/tei-aps-secundario/ValueSet/VSPrevision,0.1.0,active,,VSPrevision,VS Prevision,"Previsión del paciente","StructureDefinition/Prevision","Internal"
+https://interoperabilidad.minsal.cl/fhir/ig/tei-aps-secundario/ValueSet/VSTipoEventoTEI,0.1.0,draft,,VSTipoEventoTEI,Tipo de Evento,"Tipo de evento en APS-Secundario","StructureDefinition/MessageHeaderTEI","Internal"

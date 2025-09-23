@@ -1,0 +1,26 @@
+{
+  "resourceType" : "MessageHeader",
+  "id" : "MessageHeaderEjemplo",
+  "meta" : {
+    "lastUpdated" : "2025-07-24T10:21:55-04:00",
+    "profile" : ["https://interoperabilidad.minsal.cl/fhir/ig/tei-aps-secundario/StructureDefinition/MessageHeaderTEI"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: MessageHeader MessageHeaderEjemplo</b></p><a name=\"MessageHeaderEjemplo\"> </a><a name=\"hcMessageHeaderEjemplo\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Last updated: 2025-07-24 10:21:55-0400</p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-MessageHeaderTEI.html\">MessageHeaderTEI</a></p></div><p><b>event</b>: <a href=\"CodeSystem-CSTipoEventoTEI.html#CSTipoEventoTEI-resumir-aps\">Tipo de Evento resumir-aps</a>: Resumir eventos APS</p><p><b>author</b>: <a href=\"Bundle-BundleEnriquecidoEjemplo.html#PractitionerRole_PractitionerRoleReferenciador\">Bundle: type = message; timestamp = 2025-07-24 10:21:55-0400</a></p><h3>Sources</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Software</b></td><td><b>Endpoint</b></td></tr><tr><td style=\"display: none\">*</td><td>Mi Software</td><td>endpoint.dominio.cl</td></tr></table><p><b>focus</b>: <a href=\"ServiceRequest-SolicitudInterconsultaEjemplo.html\">ServiceRequest Patient referral to specialist</a></p></div>"
+  },
+  "eventCoding" : {
+    "system" : "https://interoperabilidad.minsal.cl/fhir/ig/tei-aps-secundario/CodeSystem/CSTipoEventoTEI",
+    "code" : "resumir-aps"
+  },
+  "author" : {
+    "reference" : "PractitionerRole/PractitionerRoleReferenciador"
+  },
+  "source" : {
+    "software" : "Mi Software",
+    "endpoint" : "endpoint.dominio.cl"
+  },
+  "focus" : [{
+    "reference" : "ServiceRequest/SolicitudInterconsultaEjemplo"
+  }]
+}

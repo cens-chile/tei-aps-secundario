@@ -1,0 +1,126 @@
+{
+  "resourceType" : "Bundle",
+  "id" : "fd69f18a-e7dd-4f74-9132-6a761a10dc7f",
+  "meta" : {
+    "lastUpdated" : "2025-09-23T18:02:48.533-03:00"
+  },
+  "type" : "collection",
+  "entry" : [{
+    "fullUrl" : "https://interoperabilidad.minsal.cl/fhir/ig/tei-aps-secundario/ValueSet/VSPrevision",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"/><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion performed internally based on <a href=\"CodeSystem-CSPrevision.html\">codesystem CS Prevision v0.1.0 (CodeSystem)</a></p><p>This value set contains 7 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://interoperabilidad.minsal.cl/fhir/ig/tei-aps-secundario/CodeSystem/CSPrevision-01\"> </a>\u00a0\u00a0<a href=\"CodeSystem-CSPrevision.html#CSPrevision-01\">01</a></td><td>https://interoperabilidad.minsal.cl/fhir/ig/tei-aps-secundario/CodeSystem/CSPrevision</td><td>FONASA</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://interoperabilidad.minsal.cl/fhir/ig/tei-aps-secundario/CodeSystem/CSPrevision-02\"> </a>\u00a0\u00a0<a href=\"CodeSystem-CSPrevision.html#CSPrevision-02\">02</a></td><td>https://interoperabilidad.minsal.cl/fhir/ig/tei-aps-secundario/CodeSystem/CSPrevision</td><td>ISAPRE</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://interoperabilidad.minsal.cl/fhir/ig/tei-aps-secundario/CodeSystem/CSPrevision-03\"> </a>\u00a0\u00a0<a href=\"CodeSystem-CSPrevision.html#CSPrevision-03\">03</a></td><td>https://interoperabilidad.minsal.cl/fhir/ig/tei-aps-secundario/CodeSystem/CSPrevision</td><td>CAPREDENA</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://interoperabilidad.minsal.cl/fhir/ig/tei-aps-secundario/CodeSystem/CSPrevision-04\"> </a>\u00a0\u00a0<a href=\"CodeSystem-CSPrevision.html#CSPrevision-04\">04</a></td><td>https://interoperabilidad.minsal.cl/fhir/ig/tei-aps-secundario/CodeSystem/CSPrevision</td><td>DIPRECA</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://interoperabilidad.minsal.cl/fhir/ig/tei-aps-secundario/CodeSystem/CSPrevision-05\"> </a>\u00a0\u00a0<a href=\"CodeSystem-CSPrevision.html#CSPrevision-05\">05</a></td><td>https://interoperabilidad.minsal.cl/fhir/ig/tei-aps-secundario/CodeSystem/CSPrevision</td><td>SISA</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://interoperabilidad.minsal.cl/fhir/ig/tei-aps-secundario/CodeSystem/CSPrevision-96\"> </a>\u00a0\u00a0<a href=\"CodeSystem-CSPrevision.html#CSPrevision-96\">96</a></td><td>https://interoperabilidad.minsal.cl/fhir/ig/tei-aps-secundario/CodeSystem/CSPrevision</td><td>NINGUNA</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://interoperabilidad.minsal.cl/fhir/ig/tei-aps-secundario/CodeSystem/CSPrevision-99\"> </a>\u00a0\u00a0<a href=\"CodeSystem-CSPrevision.html#CSPrevision-99\">99</a></td><td>https://interoperabilidad.minsal.cl/fhir/ig/tei-aps-secundario/CodeSystem/CSPrevision</td><td>DESCONOCIDO</td></tr></table></div>"
+      },
+      "url" : "https://interoperabilidad.minsal.cl/fhir/ig/tei-aps-secundario/ValueSet/VSPrevision",
+      "version" : "0.1.0",
+      "name" : "VSPrevision",
+      "title" : "VS Prevision",
+      "status" : "active",
+      "experimental" : false,
+      "date" : "2025-09-23T18:02:15-03:00",
+      "expansion" : {
+        "identifier" : "urn:uuid:8bf5edf4-22e1-4cdc-99c4-eaf0e962ffdb",
+        "timestamp" : "2025-09-23T18:03:24-03:00",
+        "total" : 7,
+        "offset" : 0,
+        "parameter" : [{
+          "name" : "count",
+          "valueInteger" : 1000
+        },
+        {
+          "name" : "offset",
+          "valueInteger" : 0
+        },
+        {
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "https://interoperabilidad.minsal.cl/fhir/ig/tei-aps-secundario/CodeSystem/CSPrevision|0.1.0"
+        }],
+        "contains" : [{
+          "system" : "https://interoperabilidad.minsal.cl/fhir/ig/tei-aps-secundario/CodeSystem/CSPrevision",
+          "code" : "01",
+          "display" : "FONASA"
+        },
+        {
+          "system" : "https://interoperabilidad.minsal.cl/fhir/ig/tei-aps-secundario/CodeSystem/CSPrevision",
+          "code" : "02",
+          "display" : "ISAPRE"
+        },
+        {
+          "system" : "https://interoperabilidad.minsal.cl/fhir/ig/tei-aps-secundario/CodeSystem/CSPrevision",
+          "code" : "03",
+          "display" : "CAPREDENA"
+        },
+        {
+          "system" : "https://interoperabilidad.minsal.cl/fhir/ig/tei-aps-secundario/CodeSystem/CSPrevision",
+          "code" : "04",
+          "display" : "DIPRECA"
+        },
+        {
+          "system" : "https://interoperabilidad.minsal.cl/fhir/ig/tei-aps-secundario/CodeSystem/CSPrevision",
+          "code" : "05",
+          "display" : "SISA"
+        },
+        {
+          "system" : "https://interoperabilidad.minsal.cl/fhir/ig/tei-aps-secundario/CodeSystem/CSPrevision",
+          "code" : "96",
+          "display" : "NINGUNA"
+        },
+        {
+          "system" : "https://interoperabilidad.minsal.cl/fhir/ig/tei-aps-secundario/CodeSystem/CSPrevision",
+          "code" : "99",
+          "display" : "DESCONOCIDO"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "https://interoperabilidad.minsal.cl/fhir/ig/tei-aps-secundario/ValueSet/VSTipoEventoTEI",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"/><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion performed internally based on <a href=\"CodeSystem-CSTipoEventoTEI.html\">codesystem Tipo de Evento v0.1.0 (CodeSystem)</a></p><p>This value set contains 1 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://interoperabilidad.minsal.cl/fhir/ig/tei-aps-secundario/CodeSystem/CSTipoEventoTEI-resumir-aps\"> </a>\u00a0\u00a0<a href=\"CodeSystem-CSTipoEventoTEI.html#CSTipoEventoTEI-resumir-aps\">resumir-aps</a></td><td>https://interoperabilidad.minsal.cl/fhir/ig/tei-aps-secundario/CodeSystem/CSTipoEventoTEI</td><td>Resumir eventos APS</td></tr></table></div>"
+      },
+      "url" : "https://interoperabilidad.minsal.cl/fhir/ig/tei-aps-secundario/ValueSet/VSTipoEventoTEI",
+      "version" : "0.1.0",
+      "name" : "VSTipoEventoTEI",
+      "title" : "Tipo de Evento",
+      "status" : "draft",
+      "experimental" : false,
+      "date" : "2025-09-23T18:02:15-03:00",
+      "expansion" : {
+        "identifier" : "urn:uuid:decdcb89-1cf1-4266-b07a-c585d46d029d",
+        "timestamp" : "2025-09-23T18:03:24-03:00",
+        "total" : 1,
+        "offset" : 0,
+        "parameter" : [{
+          "name" : "count",
+          "valueInteger" : 1000
+        },
+        {
+          "name" : "offset",
+          "valueInteger" : 0
+        },
+        {
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "https://interoperabilidad.minsal.cl/fhir/ig/tei-aps-secundario/CodeSystem/CSTipoEventoTEI|0.1.0"
+        }],
+        "contains" : [{
+          "system" : "https://interoperabilidad.minsal.cl/fhir/ig/tei-aps-secundario/CodeSystem/CSTipoEventoTEI",
+          "code" : "resumir-aps",
+          "display" : "Resumir eventos APS"
+        }]
+      }
+    }
+  }]
+}

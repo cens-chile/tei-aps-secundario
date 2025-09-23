@@ -1,0 +1,770 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <https://loinc.org/rdf/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://interoperabilidad.minsal.cl/fhir/ig/tei-aps-secundario/Bundle/BundleEnriquecidoEjemplo> a fhir:Bundle ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "BundleEnriquecidoEjemplo"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://interoperabilidad.minsal.cl/fhir/ig/tei-aps-secundario/StructureDefinition/BundleEnriquecido"^^xsd:anyURI ;
+       fhir:link <https://interoperabilidad.minsal.cl/fhir/ig/tei-aps-secundario/StructureDefinition/BundleEnriquecido>
+     ] )
+  ] ; # 
+  fhir:type [ fhir:v "message"] ; # 
+  fhir:timestamp [ fhir:v "2025-07-24T10:21:55-04:00"^^xsd:dateTime] ; # 
+  fhir:entry ( [
+     fhir:fullUrl [ fhir:v "MessageHeader/MessageHeaderEjemplo"^^xsd:anyURI ] ;
+     fhir:resource ( <MessageHeader/MessageHeaderEjemplo> )
+  ] [
+     fhir:fullUrl [ fhir:v "ServiceRequest/SolicitudInterconsultaEjemplo"^^xsd:anyURI ] ;
+     fhir:resource ( <ServiceRequest/SolicitudInterconsultaEjemplo> )
+  ] [
+     fhir:fullUrl [ fhir:v "Encounter/EncounterIniciarTEIEjemplo"^^xsd:anyURI ] ;
+     fhir:resource ( <Encounter/EncounterIniciarTEIEjemplo> )
+  ] [
+     fhir:fullUrl [ fhir:v "Patient/EjemploPatientLE"^^xsd:anyURI ] ;
+     fhir:resource ( <Patient/EjemploPatientLE> )
+  ] [
+     fhir:fullUrl [ fhir:v "Condition/ConditionDiagnosticoTEIEjemplo"^^xsd:anyURI ] ;
+     fhir:resource ( <Condition/ConditionDiagnosticoTEIEjemplo> )
+  ] [
+     fhir:fullUrl [ fhir:v "Observation/ObservationDiscapacidadTEIEjemplo"^^xsd:anyURI ] ;
+     fhir:resource ( <Observation/ObservationDiscapacidadTEIEjemplo> )
+  ] [
+     fhir:fullUrl [ fhir:v "Observation/ObservationIniciarCuidadorTEIEjemplo"^^xsd:anyURI ] ;
+     fhir:resource ( <Observation/ObservationIniciarCuidadorTEIEjemplo> )
+  ] [
+     fhir:fullUrl [ fhir:v "http://interoperabilidad.minsal.cl/fhir/ig/tei/PractitionerRole/PractitionerRoleReferenciador"^^xsd:anyURI ] ;
+     fhir:resource ( <http://interoperabilidad.minsal.cl/fhir/ig/tei/PractitionerRole/PractitionerRoleReferenciador> )
+  ] [
+     fhir:fullUrl [ fhir:v "http://interoperabilidad.minsal.cl/fhir/ig/tei/Practitioner/PractitionerProfesionalLEEjemplo2"^^xsd:anyURI ] ;
+     fhir:resource ( <http://interoperabilidad.minsal.cl/fhir/ig/tei/Practitioner/PractitionerProfesionalLEEjemplo2> )
+  ] [
+     fhir:fullUrl [ fhir:v "http://interoperabilidad.minsal.cl/fhir/ig/tei/Organization/OrganizationLEReferenciar"^^xsd:anyURI ] ;
+     fhir:resource ( <http://interoperabilidad.minsal.cl/fhir/ig/tei/Organization/OrganizationLEReferenciar> )
+  ] [
+     fhir:fullUrl [ fhir:v "http://interoperabilidad.minsal.cl/fhir/ig/tei/PractitionerRole/PractitionerRoleAtendedor1"^^xsd:anyURI ] ;
+     fhir:resource ( <http://interoperabilidad.minsal.cl/fhir/ig/tei/PractitionerRole/PractitionerRoleAtendedor1> )
+  ] [
+     fhir:fullUrl [ fhir:v "http://interoperabilidad.minsal.cl/fhir/ig/tei/Organization/OrganizationLEAtendedor"^^xsd:anyURI ] ;
+     fhir:resource ( <http://interoperabilidad.minsal.cl/fhir/ig/tei/Organization/OrganizationLEAtendedor> )
+  ] [
+     fhir:fullUrl [ fhir:v "QuestionnaireResponse/QuestionnaireResponseIniciarTEIEjemplo"^^xsd:anyURI ] ;
+     fhir:resource ( <QuestionnaireResponse/QuestionnaireResponseIniciarTEIEjemplo> )
+  ] ) . # 
+
+<MessageHeader/MessageHeaderEjemplo> a fhir:MessageHeader ;
+  fhir:id [ fhir:v "MessageHeaderEjemplo"] ; # 
+  fhir:meta [
+     fhir:lastUpdated [ fhir:v "2025-07-24T10:21:55-04:00"^^xsd:dateTime ] ;
+     fhir:profile ( [
+       fhir:v "https://interoperabilidad.minsal.cl/fhir/ig/tei-aps-secundario/StructureDefinition/MessageHeaderTEI"^^xsd:anyURI ;
+       fhir:link <https://interoperabilidad.minsal.cl/fhir/ig/tei-aps-secundario/StructureDefinition/MessageHeaderTEI>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"MessageHeader_MessageHeaderEjemplo\"> </a><p class=\"res-header-id\"><b>Generated Narrative: MessageHeader MessageHeaderEjemplo</b></p><a name=\"MessageHeaderEjemplo\"> </a><a name=\"hcMessageHeaderEjemplo\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Last updated: 2025-07-24 10:21:55-0400</p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-MessageHeaderTEI.html\">MessageHeaderTEI</a></p></div><p><b>event</b>: <a href=\"CodeSystem-CSTipoEventoTEI.html#CSTipoEventoTEI-resumir-aps\">Tipo de Evento resumir-aps</a>: Resumir eventos APS</p><p><b>author</b>: <a href=\"Bundle-BundleEnriquecidoEjemplo.html#PractitionerRole_PractitionerRoleReferenciador\">Bundle: type = message; timestamp = 2025-07-24 10:21:55-0400</a></p><h3>Sources</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Software</b></td><td><b>Endpoint</b></td></tr><tr><td style=\"display: none\">*</td><td>Mi Software</td><td>endpoint.dominio.cl</td></tr></table><p><b>focus</b>: <a href=\"ServiceRequest-SolicitudInterconsultaEjemplo.html\">ServiceRequest Patient referral to specialist</a></p></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:event [
+     a fhir:Coding ;
+     fhir:system [ fhir:v "https://interoperabilidad.minsal.cl/fhir/ig/tei-aps-secundario/CodeSystem/CSTipoEventoTEI"^^xsd:anyURI ] ;
+     fhir:code [ fhir:v "resumir-aps" ]
+  ] ; # 
+  fhir:author [
+     fhir:link <https://interoperabilidad.minsal.cl/fhir/ig/tei-aps-secundario/PractitionerRole/PractitionerRoleReferenciador> ;
+     fhir:reference [ fhir:v "PractitionerRole/PractitionerRoleReferenciador" ]
+  ] ; # 
+  fhir:source [
+     fhir:software [ fhir:v "Mi Software" ] ;
+     fhir:endpoint [ fhir:v "endpoint.dominio.cl"^^xsd:anyURI ]
+  ] ; # 
+  fhir:focus ( [
+     fhir:link <https://interoperabilidad.minsal.cl/fhir/ig/tei-aps-secundario/ServiceRequest/SolicitudInterconsultaEjemplo> ;
+     fhir:reference [ fhir:v "ServiceRequest/SolicitudInterconsultaEjemplo" ]
+  ] ) . # 
+
+<ServiceRequest/SolicitudInterconsultaEjemplo> a fhir:ServiceRequest ;
+  fhir:id [ fhir:v "SolicitudInterconsultaEjemplo"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ServiceRequestLE"^^xsd:anyURI ;
+       fhir:link <https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ServiceRequestLE>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"ServiceRequest_SolicitudInterconsultaEjemplo\"> </a><p class=\"res-header-id\"><b>Generated Narrative: ServiceRequest SolicitudInterconsultaEjemplo</b></p><a name=\"SolicitudInterconsultaEjemplo\"> </a><a name=\"hcSolicitudInterconsultaEjemplo\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://interoperabilidad.minsal.cl/fhir/ig/tei/0.2.1/StructureDefinition-ServiceRequestLE.html\">ServiceRequest LE</a></p></div><p><b>Estado Interconsulta Codigo</b>: <span title=\"Codes:{https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSEstadoInterconsulta 1}\">A la espera de referencia</span></p><p><b>identifier</b>: 123</p><p><b>status</b>: Draft</p><p><b>intent</b>: Order</p><p><b>category</b>: <span title=\"Codes:{https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSModalidadAtencionCodigo 1}\">Presencial</span></p><p><b>priority</b>: Routine</p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 103696004}\">Interconsulta para atención presencial</span></p><p><b>subject</b>: <a href=\"Bundle-BundleEnriquecidoEjemplo.html#Patient_EjemploPatientLE\">Bundle: type = message; timestamp = 2025-07-24 10:21:55-0400</a></p><p><b>encounter</b>: <a href=\"Encounter-EncounterIniciarTEIEjemplo.html\">Encounter: extension = Derivación; identifier = 13696133 (use: official, ); status = finished; class = Presencial (Modalidad Atencion Codigo#1); period = 2025-07-24 10:19:44-0400 --&gt; 2025-07-24 10:21:53-0400</a></p><p><b>authoredOn</b>: 2024-12-10 09:00:00+0000</p><p><b>requester</b>: <a href=\"Bundle-BundleEnriquecidoEjemplo.html#PractitionerRole_PractitionerRoleReferenciador\">Bundle: type = message; timestamp = 2025-07-24 10:21:55-0400</a></p><p><b>locationCode</b>: <span title=\"Codes:{https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSDestinoReferenciaCodigo 1}\">Nivel Secundario</span></p><p><b>reasonCode</b>: <span title=\"Codes:{https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSDerivadoParaCodigo 1}\">Confirmación</span></p><p><b>supportingInfo</b>: <a href=\"QuestionnaireResponse-QuestionnaireResponseIniciarTEIEjemplo.html\">Response to Questionnaire '-&gt;Motivo de Derivación' about '-&gt;Patient/07216d5b-1662-46ac-a041-20a40f2b3881'</a></p></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ExtensionEstadoInterconsultaCodigoLE"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [ fhir:v "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSEstadoInterconsulta"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "1" ] ;
+         fhir:display [ fhir:v "A la espera de referencia" ]
+       ] )
+     ]
+  ] ) ; # 
+  fhir:identifier ( [
+     fhir:value [ fhir:v "123" ]
+  ] ) ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:intent [ fhir:v "order"] ; # 
+  fhir:category ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSModalidadAtencionCodigo"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "1" ] ;
+       fhir:display [ fhir:v "Presencial" ]
+     ] )
+  ] ) ; # 
+  fhir:priority [ fhir:v "routine"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       a sct:103696004 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "103696004" ]
+     ] ) ;
+     fhir:text [ fhir:v "Interconsulta para atención presencial" ]
+  ] ; # 
+  fhir:subject [
+     fhir:link <https://interoperabilidad.minsal.cl/fhir/ig/tei-aps-secundario/Patient/EjemploPatientLE> ;
+     fhir:reference [ fhir:v "Patient/EjemploPatientLE" ]
+  ] ; # 
+  fhir:encounter [
+     fhir:link <https://interoperabilidad.minsal.cl/fhir/ig/tei-aps-secundario/Encounter/EncounterIniciarTEIEjemplo> ;
+     fhir:reference [ fhir:v "Encounter/EncounterIniciarTEIEjemplo" ]
+  ] ; # 
+  fhir:authoredOn [ fhir:v "2024-12-10T09:00:00Z"^^xsd:dateTime] ; # 
+  fhir:requester [
+     fhir:link <https://interoperabilidad.minsal.cl/fhir/ig/tei-aps-secundario/PractitionerRole/PractitionerRoleReferenciador> ;
+     fhir:reference [ fhir:v "PractitionerRole/PractitionerRoleReferenciador" ]
+  ] ; # 
+  fhir:locationCode ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSDestinoReferenciaCodigo"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "1" ] ;
+       fhir:display [ fhir:v "Nivel Secundario" ]
+     ] )
+  ] ) ; # 
+  fhir:reasonCode ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSDerivadoParaCodigo"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "1" ] ;
+       fhir:display [ fhir:v "Confirmación" ]
+     ] )
+  ] ) ; # 
+  fhir:supportingInfo ( [
+     fhir:link <https://interoperabilidad.minsal.cl/fhir/ig/tei-aps-secundario/QuestionnaireResponse/QuestionnaireResponseIniciarTEIEjemplo> ;
+     fhir:reference [ fhir:v "QuestionnaireResponse/QuestionnaireResponseIniciarTEIEjemplo" ]
+  ] ) . # 
+
+<Encounter/EncounterIniciarTEIEjemplo> a fhir:Encounter ;
+  fhir:id [ fhir:v "EncounterIniciarTEIEjemplo"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/EncounterIniciarLE"^^xsd:anyURI ;
+       fhir:link <https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/EncounterIniciarLE>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Encounter_EncounterIniciarTEIEjemplo\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Encounter EncounterIniciarTEIEjemplo</b></p><a name=\"EncounterIniciarTEIEjemplo\"> </a><a name=\"hcEncounterIniciarTEIEjemplo\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://interoperabilidad.minsal.cl/fhir/ig/tei/0.2.1/StructureDefinition-EncounterIniciarLE.html\">Encounter Iniciar LE</a></p></div><p><b>Consecuencia Atención Codigo</b>: <span title=\"Codes:{https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSConsecuenciaAtencionCodigo 3}\">Derivación</span></p><p><b>identifier</b>: 13696133 (use: official, )</p><p><b>status</b>: Finished</p><p><b>class</b>: <a href=\"https://interoperabilidad.minsal.cl/fhir/ig/tei/0.2.1/CodeSystem-CSModalidadAtencionCodigo.html#CSModalidadAtencionCodigo-1\">Modalidad Atencion Codigo 1</a>: Presencial</p><p><b>subject</b>: <a href=\"Patient/07216d5b-1662-46ac-a041-20a40f2b3881\">Patient/07216d5b-1662-46ac-a041-20a40f2b3881</a></p><h3>Participants</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Individual</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"PractitionerRole/71c67974-99f2-4537-8956-4391865cba48\">PractitionerRole/71c67974-99f2-4537-8956-4391865cba48</a></td></tr></table><p><b>period</b>: 2025-07-24 10:19:44-0400 --&gt; 2025-07-24 10:21:53-0400</p><h3>Diagnoses</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Condition</b></td><td><b>Rank</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"Condition/f422e53e-82a5-4798-8845-1902b0330ddc\">Condition/f422e53e-82a5-4798-8845-1902b0330ddc</a></td><td>1</td></tr></table></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ExtensionConsecuenciaAtencionCodigo"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [ fhir:v "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSConsecuenciaAtencionCodigo"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "3" ] ;
+         fhir:display [ fhir:v "Derivación" ]
+       ] )
+     ]
+  ] ) ; # 
+  fhir:identifier ( [
+     fhir:use [ fhir:v "official" ] ;
+     fhir:value [ fhir:v "13696133" ]
+  ] ) ; # 
+  fhir:status [ fhir:v "finished"] ; # 
+  fhir:class [
+     fhir:system [ fhir:v "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSModalidadAtencionCodigo"^^xsd:anyURI ] ;
+     fhir:code [ fhir:v "1" ] ;
+     fhir:display [ fhir:v "Presencial" ]
+  ] ; # 
+  fhir:subject [
+     fhir:link <https://interoperabilidad.minsal.cl/fhir/ig/tei-aps-secundario/Patient/07216d5b-1662-46ac-a041-20a40f2b3881> ;
+     fhir:reference [ fhir:v "Patient/07216d5b-1662-46ac-a041-20a40f2b3881" ]
+  ] ; # 
+  fhir:participant ( [
+     fhir:individual [
+       fhir:link <https://interoperabilidad.minsal.cl/fhir/ig/tei-aps-secundario/PractitionerRole/71c67974-99f2-4537-8956-4391865cba48> ;
+       fhir:reference [ fhir:v "PractitionerRole/71c67974-99f2-4537-8956-4391865cba48" ]
+     ]
+  ] ) ; # 
+  fhir:period [
+     fhir:start [ fhir:v "2025-07-24T10:19:44-04:00"^^xsd:dateTime ] ;
+     fhir:end [ fhir:v "2025-07-24T10:21:53-04:00"^^xsd:dateTime ]
+  ] ; # 
+  fhir:diagnosis ( [
+     fhir:condition [
+       fhir:link <https://interoperabilidad.minsal.cl/fhir/ig/tei-aps-secundario/Condition/f422e53e-82a5-4798-8845-1902b0330ddc> ;
+       fhir:reference [ fhir:v "Condition/f422e53e-82a5-4798-8845-1902b0330ddc" ]
+     ] ;
+     fhir:rank [ fhir:v "1"^^xsd:positiveInteger ]
+  ] ) . # 
+
+<Patient/EjemploPatientLE> a fhir:Patient ;
+  fhir:id [ fhir:v "EjemploPatientLE"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/PatientLE"^^xsd:anyURI ;
+       fhir:link <https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/PatientLE>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Patient_EjemploPatientLE\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Patient EjemploPatientLE</b></p><a name=\"EjemploPatientLE\"> </a><a name=\"hcEjemploPatientLE\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://interoperabilidad.minsal.cl/fhir/ig/tei/0.2.1/StructureDefinition-PatientLE.html\">Patient LE</a></p></div><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\">María Josefina Gonzalez (official) Male, DoB: 1974-12-25 ( Rol Único Nacional: 90000000-6 (use: official, ))</p><hr/><table class=\"grid\"><tr><td style=\"background-color: #f3f5da\" title=\"Record is active\">Active:</td><td>true</td><td style=\"background-color: #f3f5da\" title=\"Known status of Patient\">Deceased:</td><td colspan=\"3\">false</td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Ways to contact the Patient\">Contact Detail</td><td colspan=\"3\"><ul><li>ph: (562) 5555 6473(Work)</li><li>Calle Arrabal Conchita Tejeda Nº 24, Esc. 432(home)</li></ul></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Esta extensión incluye códigos de países\"><a href=\"https://hl7chile.cl/fhir/ig/clcore/1.9.2/StructureDefinition-CodigoPaises.html\">Código de Países</a></td><td colspan=\"3\"><span title=\"Codes:{https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CodPais 152}\">Chile</span></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Pueblos Originarios Perteneciente\"><a href=\"https://interoperabilidad.minsal.cl/fhir/ig/tei/0.2.1/StructureDefinition-PueblosOriginariosPerteneciente.html\">Pueblos Originarios Perteneciente</a></td><td colspan=\"3\">true</td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Almacenar si el paciente pertenece a algun pueblo originario\"><a href=\"https://interoperabilidad.minsal.cl/fhir/ig/tei/0.2.1/StructureDefinition-PueblosOriginarios.html\">Pueblos Originarios</a></td><td colspan=\"3\"><span title=\"Codes:{https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/PueblosOriginariosCS 07}\">Diaguita</span></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Identidad De Género\"><a href=\"https://hl7chile.cl/fhir/ig/clcore/1.9.2/StructureDefinition-IdentidadDeGenero.html\">Identidad De Género</a></td><td colspan=\"3\"><span title=\"Codes:{https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSIdentidaddeGenero 2}\">Femenina</span></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Pueblos Afrodescendiente\"><a href=\"https://interoperabilidad.minsal.cl/fhir/ig/tei/0.2.1/StructureDefinition-PueblosAfrodescendiente.html\">Pueblos Afrodescendiente</a></td><td colspan=\"3\">false</td></tr><tr><td style=\"background-color: #f3f5da\" title=\"País de origen del paciente\"><a href=\"https://interoperabilidad.minsal.cl/fhir/ig/tei/0.2.1/StructureDefinition-PaisOrigenMPI.html\">País de origen del paciente</a></td><td colspan=\"3\"><span title=\"Codes:{https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CodPais 152}\">Chile</span></td></tr></table></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/IdentidadDeGenero"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [ fhir:v "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSIdentidaddeGenero"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "2" ] ;
+         fhir:display [ fhir:v "Femenina" ]
+       ] )
+     ]
+  ] [
+     fhir:url [ fhir:v "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CodigoPaises"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [ fhir:v "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CodPais"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "152" ] ;
+         fhir:display [ fhir:v "Chile" ]
+       ] )
+     ]
+  ] [
+     fhir:url [ fhir:v "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/PaisOrigenMPI"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [ fhir:v "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CodPais"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "152" ] ;
+         fhir:display [ fhir:v "Chile" ]
+       ] )
+     ]
+  ] [
+     fhir:url [ fhir:v "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/PueblosOriginariosPerteneciente"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:boolean ;
+       fhir:v true
+     ]
+  ] [
+     fhir:url [ fhir:v "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/PueblosAfrodescendiente"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:boolean ;
+       fhir:v false
+     ]
+  ] [
+     fhir:url [ fhir:v "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/PueblosOriginarios"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [ fhir:v "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/PueblosOriginariosCS"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "07" ] ;
+         fhir:display [ fhir:v "Diaguita" ]
+       ] )
+     ]
+  ] ) ; # 
+  fhir:identifier ( [
+     fhir:use [ fhir:v "official" ] ;
+     fhir:type [
+       fhir:extension ( [
+         fhir:url [ fhir:v "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CodigoPaises"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:CodeableConcept ;
+           fhir:coding ( [
+             fhir:system [ fhir:v "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CodPais"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "152" ] ;
+             fhir:display [ fhir:v "Chile" ]
+           ] )
+         ]
+       ] ) ;
+       fhir:coding ( [
+         fhir:system [ fhir:v "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSTipoIdentificador"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "01" ] ;
+         fhir:display [ fhir:v "RUN" ]
+       ] ) ;
+       fhir:text [ fhir:v "Rol Único Nacional" ]
+     ] ;
+     fhir:value [ fhir:v "90000000-6" ] ;
+     fhir:assigner [
+       fhir:display [ fhir:v "Republica de Chile" ]
+     ]
+  ] ) ; # 
+  fhir:active [ fhir:v true] ; # 
+  fhir:name ( [
+     fhir:use [ fhir:v "official" ] ;
+     fhir:family [
+       fhir:v "Gonzalez" ;
+       fhir:extension ( [
+         fhir:url [ fhir:v "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/SegundoApellido"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Morales"
+         ]
+       ] )
+     ] ;
+     fhir:given ( [ fhir:v "María" ] [ fhir:v "Josefina" ] )
+  ] ) ; # 
+  fhir:telecom ( [
+     fhir:system [ fhir:v "phone" ] ;
+     fhir:value [ fhir:v "(562) 5555 6473" ] ;
+     fhir:use [ fhir:v "work" ] ;
+     fhir:rank [ fhir:v "1"^^xsd:positiveInteger ]
+  ] ) ; # 
+  fhir:gender [ fhir:v "male"] ; # 
+  fhir:birthDate [ fhir:v "1974-12-25"^^xsd:date] ; # 
+  fhir:deceased [
+     a fhir:boolean ;
+     fhir:v false
+  ] ; # 
+  fhir:address ( [
+     fhir:use [ fhir:v "home" ] ;
+     fhir:text [ fhir:v "Calle Arrabal Conchita Tejeda Nº 24, Esc. 432" ] ;
+     fhir:line ( [ fhir:v "Calle Arrabal Conchita Tejeda" ] ) ;
+     fhir:city [
+       fhir:v "Huara" ;
+       fhir:extension ( [
+         fhir:url [ fhir:v "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/ComunasCl"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:CodeableConcept ;
+           fhir:coding ( [
+             fhir:system [ fhir:v "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "01404" ] ;
+             fhir:display [ fhir:v "Huara" ]
+           ] )
+         ]
+       ] )
+     ] ;
+     fhir:district [
+       fhir:v "Provincia del Tamarugal" ;
+       fhir:extension ( [
+         fhir:url [ fhir:v "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/ProvinciasCl"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:CodeableConcept ;
+           fhir:coding ( [
+             fhir:system [ fhir:v "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodProvinciasCL"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "014" ] ;
+             fhir:display [ fhir:v "Tamarugal" ]
+           ] )
+         ]
+       ] )
+     ] ;
+     fhir:state [
+       fhir:v "Región de Tarapacá" ;
+       fhir:extension ( [
+         fhir:url [ fhir:v "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/RegionesCl"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:CodeableConcept ;
+           fhir:coding ( [
+             fhir:system [ fhir:v "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodRegionCL"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "01" ] ;
+             fhir:display [ fhir:v "Tarapacá" ]
+           ] )
+         ]
+       ] )
+     ]
+  ] ) . # 
+
+<Condition/ConditionDiagnosticoTEIEjemplo> a fhir:Condition ;
+  fhir:id [ fhir:v "ConditionDiagnosticoTEIEjemplo"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ConditionDiagnosticoLE"^^xsd:anyURI ;
+       fhir:link <https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ConditionDiagnosticoLE>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Condition_ConditionDiagnosticoTEIEjemplo\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Condition ConditionDiagnosticoTEIEjemplo</b></p><a name=\"ConditionDiagnosticoTEIEjemplo\"> </a><a name=\"hcConditionDiagnosticoTEIEjemplo\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://interoperabilidad.minsal.cl/fhir/ig/tei/0.2.1/StructureDefinition-ConditionDiagnosticoLE.html\">Condition Diagnostico LE</a></p></div><p><b>clinicalStatus</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/condition-clinical active}\">Active</span></p><p><b>verificationStatus</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/condition-ver-status provisional}\">Provisional</span></p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/condition-category encounter-diagnosis}\">Diagnostico del encuentro</span></p><p><b>code</b>: <span title=\"Codes:{http://hl7.org/fhir/sid/icd-10 L20}\">Dermatitis atópica</span></p><p><b>subject</b>: <a href=\"Patient/07216d5b-1662-46ac-a041-20a40f2b3881\">Patient/07216d5b-1662-46ac-a041-20a40f2b3881</a></p><p><b>encounter</b>: <a href=\"Encounter/00e2816a-2737-478f-8a48-796c2e0a794c\">Encounter/00e2816a-2737-478f-8a48-796c2e0a794c</a></p></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:clinicalStatus [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/condition-clinical"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "active" ] ;
+       fhir:display [ fhir:v "Active" ]
+     ] ) ;
+     fhir:text [ fhir:v "Active" ]
+  ] ; # 
+  fhir:verificationStatus [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/condition-ver-status"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "provisional" ] ;
+       fhir:display [ fhir:v "Provisional" ]
+     ] ) ;
+     fhir:text [ fhir:v "Provisional" ]
+  ] ; # 
+  fhir:category ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/condition-category"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "encounter-diagnosis" ] ;
+       fhir:display [ fhir:v "Encounter Diagnosis" ]
+     ] ) ;
+     fhir:text [ fhir:v "Diagnostico del encuentro" ]
+  ] ) ; # 
+  fhir:code [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://hl7.org/fhir/sid/icd-10"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "L20" ] ;
+       fhir:display [ fhir:v "Dermatitis atópica" ]
+     ] ) ;
+     fhir:text [ fhir:v "Dermatitis atópica" ]
+  ] ; # 
+  fhir:subject [
+     fhir:link <https://interoperabilidad.minsal.cl/fhir/ig/tei-aps-secundario/Patient/07216d5b-1662-46ac-a041-20a40f2b3881> ;
+     fhir:reference [ fhir:v "Patient/07216d5b-1662-46ac-a041-20a40f2b3881" ]
+  ] ; # 
+  fhir:encounter [
+     fhir:link <https://interoperabilidad.minsal.cl/fhir/ig/tei-aps-secundario/Encounter/00e2816a-2737-478f-8a48-796c2e0a794c> ;
+     fhir:reference [ fhir:v "Encounter/00e2816a-2737-478f-8a48-796c2e0a794c" ]
+  ] . # 
+
+<Observation/ObservationDiscapacidadTEIEjemplo> a fhir:Observation ;
+  fhir:id [ fhir:v "a06a9b26-9d06-43d2-9606-2a6ae4a23207"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ObservationDiscapacidadLE"^^xsd:anyURI ;
+       fhir:link <https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ObservationDiscapacidadLE>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_a06a9b26-9d06-43d2-9606-2a6ae4a23207\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation a06a9b26-9d06-43d2-9606-2a6ae4a23207</b></p><a name=\"a06a9b26-9d06-43d2-9606-2a6ae4a23207\"> </a><a name=\"hca06a9b26-9d06-43d2-9606-2a6ae4a23207\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://interoperabilidad.minsal.cl/fhir/ig/tei/0.2.1/StructureDefinition-ObservationDiscapacidadLE.html\">Discapacidad LE</a></p></div><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 101720-1}\">Discapacidad</span></p><p><b>subject</b>: <a href=\"Bundle-BundleEnriquecidoEjemplo.html#Patient_EjemploPatientLE\">Bundle: type = message; timestamp = 2025-07-24 10:21:55-0400</a></p><p><b>value</b>: true</p></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       a loinc:101720-1 ;
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "101720-1" ] ;
+       fhir:display [ fhir:v "Disability status" ]
+     ] ) ;
+     fhir:text [ fhir:v "Discapacidad" ]
+  ] ; # 
+  fhir:subject [
+     fhir:link <https://interoperabilidad.minsal.cl/fhir/ig/tei-aps-secundario/Patient/EjemploPatientLE> ;
+     fhir:reference [ fhir:v "Patient/EjemploPatientLE" ]
+  ] ; # 
+  fhir:value [
+     a fhir:boolean ;
+     fhir:v true
+  ] . # 
+
+<Observation/ObservationIniciarCuidadorTEIEjemplo> a fhir:Observation ;
+  fhir:id [ fhir:v "08af5b38-add5-4c44-b14d-7995012b63ee"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ObservationIniciarCuidadorLE"^^xsd:anyURI ;
+       fhir:link <https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ObservationIniciarCuidadorLE>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_08af5b38-add5-4c44-b14d-7995012b63ee\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation 08af5b38-add5-4c44-b14d-7995012b63ee</b></p><a name=\"08af5b38-add5-4c44-b14d-7995012b63ee\"> </a><a name=\"hc08af5b38-add5-4c44-b14d-7995012b63ee\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://interoperabilidad.minsal.cl/fhir/ig/tei/0.2.1/StructureDefinition-ObservationIniciarCuidadorLE.html\">Cuidador LE</a></p></div><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 95385-1}\">Cuidador de una persona con dolencias relacionadas con la edad o enfermedades crónicas.</span></p><p><b>subject</b>: <a href=\"Bundle-BundleEnriquecidoEjemplo.html#Patient_EjemploPatientLE\">Bundle: type = message; timestamp = 2025-07-24 10:21:55-0400</a></p><p><b>value</b>: true</p></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       a loinc:95385-1 ;
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "95385-1" ] ;
+       fhir:display [ fhir:v "Caregiver for person with age-related complaints, chronic diseases or frailty" ]
+     ] ) ;
+     fhir:text [ fhir:v "Cuidador de una persona con dolencias relacionadas con la edad o enfermedades crónicas." ]
+  ] ; # 
+  fhir:subject [
+     fhir:link <https://interoperabilidad.minsal.cl/fhir/ig/tei-aps-secundario/Patient/EjemploPatientLE> ;
+     fhir:reference [ fhir:v "Patient/EjemploPatientLE" ]
+  ] ; # 
+  fhir:value [
+     a fhir:boolean ;
+     fhir:v true
+  ] . # 
+
+<http://interoperabilidad.minsal.cl/fhir/ig/tei/PractitionerRole/PractitionerRoleReferenciador> a fhir:PractitionerRole ;
+  fhir:id [ fhir:v "PractitionerRoleReferenciador"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/PractitionerRoleLE"^^xsd:anyURI ;
+       fhir:link <https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/PractitionerRoleLE>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"PractitionerRole_PractitionerRoleReferenciador\"> </a><p class=\"res-header-id\"><b>Generated Narrative: PractitionerRole PractitionerRoleReferenciador</b></p><a name=\"PractitionerRoleReferenciador\"> </a><a name=\"hcPractitionerRoleReferenciador\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://interoperabilidad.minsal.cl/fhir/ig/tei/0.2.1/StructureDefinition-PractitionerRoleLE.html\">PractitionerRole LE</a></p></div><p><b>active</b>: true</p><p><b>practitioner</b>: <a href=\"Bundle-BundleEnriquecidoEjemplo.html#Practitioner_PractitionerProfesionalLEEjemplo2\">Bundle: type = message; timestamp = 2025-07-24 10:21:55-0400</a></p><p><b>organization</b>: <a href=\"Bundle-BundleEnriquecidoEjemplo.html#Organization_OrganizationLEReferenciar\">Bundle: type = message; timestamp = 2025-07-24 10:21:55-0400</a></p><p><b>code</b>: <span title=\"Codes:{https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSPractitionerTipoRolLE referenciador}\">Referenciador</span></p></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:active [ fhir:v true] ; # 
+  fhir:practitioner [
+     fhir:link <https://interoperabilidad.minsal.cl/fhir/ig/tei-aps-secundario/Practitioner/PractitionerProfesionalLEEjemplo2> ;
+     fhir:reference [ fhir:v "Practitioner/PractitionerProfesionalLEEjemplo2" ]
+  ] ; # 
+  fhir:organization [
+     fhir:link <https://interoperabilidad.minsal.cl/fhir/ig/tei-aps-secundario/Organization/OrganizationLEReferenciar> ;
+     fhir:reference [ fhir:v "Organization/OrganizationLEReferenciar" ]
+  ] ; # 
+  fhir:code ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSPractitionerTipoRolLE"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "referenciador" ] ;
+       fhir:display [ fhir:v "Referenciador" ]
+     ] )
+  ] ) . # 
+
+<http://interoperabilidad.minsal.cl/fhir/ig/tei/Practitioner/PractitionerProfesionalLEEjemplo2> a fhir:Practitioner ;
+  fhir:id [ fhir:v "PractitionerProfesionalLEEjemplo2"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/PractitionerProfesionalLE"^^xsd:anyURI ;
+       fhir:link <https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/PractitionerProfesionalLE>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Practitioner_PractitionerProfesionalLEEjemplo2\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Practitioner PractitionerProfesionalLEEjemplo2</b></p><a name=\"PractitionerProfesionalLEEjemplo2\"> </a><a name=\"hcPractitionerProfesionalLEEjemplo2\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://interoperabilidad.minsal.cl/fhir/ig/tei/0.2.1/StructureDefinition-PractitionerProfesionalLE.html\">Prestador Profesional LE</a></p></div><p><b>identifier</b>: Rol Único Nacional/90000000-6 (use: official, ), Registro Nacional de Prestadores Individuales/9999999 (use: secondary, )</p><p><b>active</b>: true</p><p><b>name</b>: Víctor Gonzalez </p><p><b>address</b>: Dirección falsa 123,depto 1202 null (work)</p><p><b>gender</b>: Male</p><p><b>birthDate</b>: 1980-01-01</p><h3>Qualifications</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Identifier</b></td><td><b>Code</b></td><td><b>Period</b></td><td><b>Issuer</b></td></tr><tr><td style=\"display: none\">*</td><td>cert</td><td><span title=\"Codes:{https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSTituloProfesional 1}\">MÉDICO CIRUJANO</span></td><td>2007-11-01 --&gt; (ongoing)</td><td>Universidad de Chile</td></tr></table></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:identifier ( [
+     fhir:use [ fhir:v "official" ] ;
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [ fhir:v "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSTipoIdentificador"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "01" ] ;
+         fhir:display [ fhir:v "RUN" ]
+       ] ) ;
+       fhir:text [ fhir:v "Rol Único Nacional" ]
+     ] ;
+     fhir:value [ fhir:v "90000000-6" ] ;
+     fhir:assigner [
+       fhir:display [ fhir:v "Republica de Chile" ]
+     ]
+  ] [
+     fhir:use [ fhir:v "secondary" ] ;
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [ fhir:v "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSTipoIdentificador"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "13" ] ;
+         fhir:display [ fhir:v "RNPI" ]
+       ] ) ;
+       fhir:text [ fhir:v "Registro Nacional de Prestadores Individuales" ]
+     ] ;
+     fhir:value [ fhir:v "9999999" ] ;
+     fhir:assigner [
+       fhir:display [ fhir:v "Intendencia de prestadores individuales - Superintendencia de Salud" ]
+     ]
+  ] ) ; # 
+  fhir:active [ fhir:v true] ; # 
+  fhir:name ( [
+     fhir:family [
+       fhir:v "Gonzalez" ;
+       fhir:extension ( [
+         fhir:url [ fhir:v "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/SegundoApellido"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Torres"
+         ]
+       ] )
+     ] ;
+     fhir:given ( [ fhir:v "Víctor" ] ) ;
+     fhir:prefix ( [ fhir:v "Dr" ] )
+  ] ) ; # 
+  fhir:address ( [
+     fhir:use [ fhir:v "work" ] ;
+     fhir:line ( [ fhir:v "Dirección falsa 123,depto 1202" ] ) ;
+     fhir:state [
+       fhir:extension ( [
+         fhir:url [ fhir:v "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/RegionesCl"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:CodeableConcept ;
+           fhir:coding ( [
+             fhir:system [ fhir:v "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodRegionCL"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "13" ] ;
+             fhir:display [ fhir:v "Metropolitana de Santiago" ]
+           ] )
+         ]
+       ] )
+     ]
+  ] ) ; # 
+  fhir:gender [ fhir:v "male"] ; # 
+  fhir:birthDate [ fhir:v "1980-01-01"^^xsd:date] ; # 
+  fhir:qualification ( [
+     fhir:identifier ( [
+       fhir:value [ fhir:v "cert" ]
+     ] ) ;
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSTituloProfesional"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "1" ] ;
+         fhir:display [ fhir:v "MÉDICO CIRUJANO" ]
+       ] ) ;
+       fhir:text [ fhir:v "MÉDICO CIRUJANO" ]
+     ] ;
+     fhir:period [
+       fhir:start [ fhir:v "2007-11-01"^^xsd:date ]
+     ] ;
+     fhir:issuer [
+       fhir:display [ fhir:v "Universidad de Chile" ]
+     ]
+  ] ) . # 
+
+<http://interoperabilidad.minsal.cl/fhir/ig/tei/Organization/OrganizationLEReferenciar> a fhir:Organization ;
+  fhir:id [ fhir:v "OrganizationLEReferenciar"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/OrganizationLE"^^xsd:anyURI ;
+       fhir:link <https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/OrganizationLE>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Organization_OrganizationLEReferenciar\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Organization OrganizationLEReferenciar</b></p><a name=\"OrganizationLEReferenciar\"> </a><a name=\"hcOrganizationLEReferenciar\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://interoperabilidad.minsal.cl/fhir/ig/tei/0.2.1/StructureDefinition-OrganizationLE.html\">Organization LE</a></p></div><p><b>identifier</b>: <code>https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSEstablecimientoDestino</code>/120101</p><p><b>name</b>: Complejo Asistencial Dr. Víctor Ríos Ruiz (Los Ángeles)</p><p><b>alias</b>: Hospital de Los Ángeles</p><p><b>telecom</b>: ph: (+56) 432336000</p><p><b>address</b>: Ricardo Vicuña 147 Los Ángeles 4451055 Chile </p></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSEstablecimientoDestino"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "120101" ]
+  ] ) ; # 
+  fhir:name [ fhir:v "Complejo Asistencial Dr. Víctor Ríos Ruiz (Los Ángeles)"] ; # 
+  fhir:alias ( [ fhir:v "Hospital de Los Ángeles"] ) ; # 
+  fhir:telecom ( [
+     fhir:system [ fhir:v "phone" ] ;
+     fhir:value [ fhir:v "(+56) 432336000" ]
+  ] ) ; # 
+  fhir:address ( [
+     fhir:line ( [ fhir:v "Ricardo Vicuña 147" ] ) ;
+     fhir:city [
+       fhir:v "Los Ángeles" ;
+       fhir:extension ( [
+         fhir:url [ fhir:v "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/ComunasCl"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:CodeableConcept ;
+           fhir:coding ( [
+             fhir:system [ fhir:v "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "08301" ] ;
+             fhir:display [ fhir:v "Los Ángeles" ]
+           ] )
+         ]
+       ] )
+     ] ;
+     fhir:postalCode [ fhir:v "4451055" ] ;
+     fhir:country [
+       fhir:v "Chile" ;
+       fhir:extension ( [
+         fhir:url [ fhir:v "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CodigoPaises"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:CodeableConcept ;
+           fhir:coding ( [
+             fhir:system [ fhir:v "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CodPais"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "152" ] ;
+             fhir:display [ fhir:v "Chile" ]
+           ] )
+         ]
+       ] )
+     ]
+  ] ) . # 
+
+<http://interoperabilidad.minsal.cl/fhir/ig/tei/PractitionerRole/PractitionerRoleAtendedor1> a fhir:PractitionerRole ;
+  fhir:id [ fhir:v "PractitionerRoleAtendedor1"] ; # 
+  fhir:meta [
+     fhir:versionId [ fhir:v "1.0" ] ;
+     fhir:profile ( [
+       fhir:v "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/PractitionerRoleLE"^^xsd:anyURI ;
+       fhir:link <https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/PractitionerRoleLE>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"PractitionerRole_PractitionerRoleAtendedor1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: PractitionerRole PractitionerRoleAtendedor1</b></p><a name=\"PractitionerRoleAtendedor1\"> </a><a name=\"hcPractitionerRoleAtendedor1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">version: 1.0</p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://interoperabilidad.minsal.cl/fhir/ig/tei/0.2.1/StructureDefinition-PractitionerRoleLE.html\">PractitionerRole LE</a></p></div><p><b>active</b>: true</p><p><b>organization</b>: <a href=\"Bundle-BundleEnriquecidoEjemplo.html#Organization_OrganizationLEAtendedor\">Bundle: type = message; timestamp = 2025-07-24 10:21:55-0400</a></p><p><b>code</b>: <span title=\"Codes:{https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSPractitionerTipoRolLE atendedor}\">Atendedor</span></p></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:active [ fhir:v true] ; # 
+  fhir:organization [
+     fhir:link <https://interoperabilidad.minsal.cl/fhir/ig/tei-aps-secundario/Organization/OrganizationLEAtendedor> ;
+     fhir:reference [ fhir:v "Organization/OrganizationLEAtendedor" ]
+  ] ; # 
+  fhir:code ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSPractitionerTipoRolLE"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "atendedor" ] ;
+       fhir:display [ fhir:v "Atendedor" ]
+     ] )
+  ] ) . # 
+
+<http://interoperabilidad.minsal.cl/fhir/ig/tei/Organization/OrganizationLEAtendedor> a fhir:Organization ;
+  fhir:id [ fhir:v "OrganizationLEAtendedor"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/OrganizationLE"^^xsd:anyURI ;
+       fhir:link <https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/OrganizationLE>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Organization_OrganizationLEAtendedor\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Organization OrganizationLEAtendedor</b></p><a name=\"OrganizationLEAtendedor\"> </a><a name=\"hcOrganizationLEAtendedor\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://interoperabilidad.minsal.cl/fhir/ig/tei/0.2.1/StructureDefinition-OrganizationLE.html\">Organization LE</a></p></div><p><b>identifier</b>: <code>https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSEstablecimientoDestino</code>/121343</p><p><b>name</b>: Centro de Referencia de Salud Miraflores</p></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSEstablecimientoDestino"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "121343" ]
+  ] ) ; # 
+  fhir:name [ fhir:v "Centro de Referencia de Salud Miraflores"] . # 
+
+<QuestionnaireResponse/QuestionnaireResponseIniciarTEIEjemplo> a fhir:QuestionnaireResponse ;
+  fhir:id [ fhir:v "QuestionnaireResponseIniciarTEIEjemplo"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/QuestionnaireResponseIniciarLE"^^xsd:anyURI ;
+       fhir:link <https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/QuestionnaireResponseIniciarLE>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"QuestionnaireResponse_QuestionnaireResponseIniciarTEIEjemplo\"> </a><p class=\"res-header-id\"><b>Generated Narrative: QuestionnaireResponse QuestionnaireResponseIniciarTEIEjemplo</b></p><a name=\"QuestionnaireResponseIniciarTEIEjemplo\"> </a><a name=\"hcQuestionnaireResponseIniciarTEIEjemplo\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://interoperabilidad.minsal.cl/fhir/ig/tei/0.2.1/StructureDefinition-QuestionnaireResponseIniciarLE.html\">QuestionnaireResponse Iniciar Motivo de la Derivación LE</a></p></div><table border=\"1\" cellpadding=\"0\" cellspacing=\"0\" style=\"border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;\"><tr style=\"border: 2px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top\"><th style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/formats.html#table\" title=\"The linkID for the item\">LinkID</a></th><th style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/formats.html#table\" title=\"Text for the item\">Text</a></th><th style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/formats.html#table\" title=\"Minimum and Maximum # of times the item can appear in the instance\">Definition</a></th><th style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/formats.html#table\" title=\"The type of the item\">Answer</a><span style=\"float: right\"><a href=\"https://hl7.org/fhir/R4/formats.html#table\" title=\"Legend for this format\"><img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC\" alt=\"doco\" style=\"background-color: inherit\"/></a></span></th></tr><tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_q_root.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"QuestionnaireResponseRoot\" class=\"hierarchy\"/> QuestionnaireResponseIniciarTEIEjemplo</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Questionnaire:<a href=\"https://interoperabilidad.minsal.cl/fhir/ig/tei/0.2.1/Questionnaire-MotivoDerivacion.html\">Motivo de Derivación</a></td></tr>#xD;\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck00.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-string.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Item\" class=\"hierarchy\"/> MotivoDerivacion</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Motivo Derivación</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Prueba 3 SS Huasco 24-07-2025 \n\nPrueba 3 SS Huasco 24-07-2025 \n\nPrueba 3 SS Huasco 24-07-2025</td></tr>#xD;\n<tr><td colspan=\"4\" class=\"hierarchy\"><br/><a href=\"https://hl7.org/fhir/R4/formats.html#table\" title=\"Legend for this format\"><img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC\" alt=\"doco\" style=\"background-color: inherit\"/> Documentation for this format</a></td></tr></table></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:questionnaire [
+     fhir:v "https://interoperabilidad.minsal.cl/fhir/ig/tei/Questionnaire/MotivoDerivacion"^^xsd:anyURI ;
+     fhir:link <https://interoperabilidad.minsal.cl/fhir/ig/tei/Questionnaire/MotivoDerivacion>
+  ] ; # 
+  fhir:status [ fhir:v "completed"] ; # 
+  fhir:subject [
+     fhir:link <https://interoperabilidad.minsal.cl/fhir/ig/tei-aps-secundario/Patient/07216d5b-1662-46ac-a041-20a40f2b3881> ;
+     fhir:reference [ fhir:v "Patient/07216d5b-1662-46ac-a041-20a40f2b3881" ]
+  ] ; # 
+  fhir:encounter [
+     fhir:link <https://interoperabilidad.minsal.cl/fhir/ig/tei-aps-secundario/Encounter/00e2816a-2737-478f-8a48-796c2e0a794c> ;
+     fhir:reference [ fhir:v "Encounter/00e2816a-2737-478f-8a48-796c2e0a794c" ]
+  ] ; # 
+  fhir:author [
+     fhir:link <https://interoperabilidad.minsal.cl/fhir/ig/tei-aps-secundario/Practitioner/db1cf0ac-e0e8-4968-a70f-3d8c9ab7a948> ;
+     fhir:reference [ fhir:v "Practitioner/db1cf0ac-e0e8-4968-a70f-3d8c9ab7a948" ]
+  ] ; # 
+  fhir:item ( [
+     fhir:linkId [ fhir:v "MotivoDerivacion" ] ;
+     fhir:text [ fhir:v "Motivo Derivación" ] ;
+     fhir:answer ( [
+       fhir:value [
+         a fhir:string ;
+         fhir:v "Prueba 3 SS Huasco 24-07-2025 \n\nPrueba 3 SS Huasco 24-07-2025 \n\nPrueba 3 SS Huasco 24-07-2025"
+       ]
+     ] )
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

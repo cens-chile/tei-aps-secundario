@@ -1,0 +1,24 @@
+Source File	Size	loadResources	load	generateSnapshots	load-configure	scan	loadDepInfo	loadInfo	checkR4R4B	generateNarratives	validate	loadLists	checkConformanceResources	checkConformanceResources2	checkConformanceResources3	generateLogicalMaps	validateExpressions	scanForUsageStats	checkURLsUnique	processProvenanceDetails	generate1	generate2	generateLogicals	makeDependencies	generateExampleZip	generateValidationPack	scanProfilesForR5	scanExamplesForR5
+/fsh-generated/resources/ImplementationGuide-fhir.tei-aps-secundario.json	6830	-	0	0	0	0	0	0	28	121	0	0	0	0	0	0	0	1	0	0	59	98	0	0	0	4	0	0
+fsh-generated/resources/Bundle-BundleEnriquecidoEjemplo.json	24783	13	40	0	1	0	0	0	2	608	0	0	0	0	0	0	0	0	0	0	83	84	0	0	0	0	0	1
+fsh-generated/resources/Bundle-BundleIniciarEjemplo.json	31727	12	12	0	0	0	0	0	2	49	0	0	0	0	0	0	0	0	0	0	50	218	0	0	0	0	0	0
+fsh-generated/resources/Bundle-BundleReferenciarEjemplo.json	14747	27	8	0	0	0	0	0	1	26	0	0	0	0	0	0	0	0	0	0	28	49	0	0	0	0	0	0
+fsh-generated/resources/Bundle-BundleRevisarEjemplo.json	14489	14	4	0	0	0	0	0	1	31	0	0	0	0	0	0	0	0	0	0	41	53	0	0	1	0	0	0
+fsh-generated/resources/Bundle-bundle-collection-001.json	73195	50	7	0	0	0	0	0	10	0	0	0	0	0	0	0	0	1	0	0	74	93	0	0	0	0	0	1
+fsh-generated/resources/CodeSystem-CSPrevision.json	817	14	0	0	0	0	0	0	1	43	0	0	0	0	0	0	0	0	0	0	17	352	0	0	0	1	0	0
+fsh-generated/resources/CodeSystem-CSTipoEventoTEI.json	533	17	0	0	1	0	0	0	0	17	0	0	0	0	0	0	0	0	0	0	13	33	0	0	0	0	0	0
+fsh-generated/resources/Condition-ConditionDiagnosticoTEIEjemplo.json	1338	9	0	0	0	0	1	0	1	20	0	0	0	0	0	0	0	0	0	0	16	22	0	0	0	0	0	0
+fsh-generated/resources/Coverage-EjemploPrevison.json	926	11	0	0	0	0	0	0	0	2	0	0	0	0	0	0	0	0	0	0	13	17	0	0	0	0	0	0
+fsh-generated/resources/Encounter-EncounterIniciarTEIEjemplo.json	1382	12	0	0	0	0	0	0	1	10	0	0	0	0	0	0	0	0	0	0	15	15	0	0	0	0	0	0
+fsh-generated/resources/MessageHeader-MessageHeaderEjemplo.json	692	6	0	0	0	0	0	0	0	6	0	0	0	0	0	0	0	0	0	0	14	18	0	0	0	0	0	0
+fsh-generated/resources/Observation-08af5b38-add5-4c44-b14d-7995012b63ee.json	661	7	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	15	11	0	0	0	0	0	0
+fsh-generated/resources/Observation-a06a9b26-9d06-43d2-9606-2a6ae4a23207.json	523	11	0	0	0	0	0	0	1	4	0	0	0	0	0	0	0	0	0	0	15	12	0	0	0	0	0	0
+fsh-generated/resources/QuestionnaireResponse-QuestionnaireResponseIniciarTEIEjemplo.json	901	9	0	0	0	0	0	0	0	5	0	0	0	0	0	0	0	0	0	0	20	17	0	0	0	0	0	0
+fsh-generated/resources/ServiceRequest-SolicitudInterconsultaEjemplo.json	2082	8	0	0	0	0	0	0	1	20	0	0	0	0	0	0	0	0	0	0	14	12	0	0	0	0	0	0
+fsh-generated/resources/StructureDefinition-BundleCollection.json	3414	10	0	128	0	0	0	0	6	119	0	0	0	0	0	0	0	1	0	0	555	2035	0	1	0	15	1	1
+fsh-generated/resources/StructureDefinition-BundleEnriquecido.json	8053	11	0	199	0	0	0	0	2	192	0	0	1	0	0	0	0	3	0	0	797	1672	0	0	0	59	0	2
+fsh-generated/resources/StructureDefinition-ExtensionBoolPrais.json	1365	9	0	35	1	0	0	0	0	13	0	0	0	0	0	0	0	0	0	0	24	80	0	0	0	2	0	0
+fsh-generated/resources/StructureDefinition-MessageHeaderTEI.json	2660	7	0	28	0	0	0	0	1	15	0	0	0	0	0	0	0	0	0	0	109	238	0	0	0	9	0	0
+fsh-generated/resources/StructureDefinition-Prevision.json	4985	7	0	73	0	0	0	0	1	18	0	0	0	0	0	0	0	1	0	0	131	373	0	0	0	14	0	0
+fsh-generated/resources/ValueSet-VSPrevision.json	460	5	0	0	1	0	0	0	1	41	0	0	0	0	0	0	0	0	0	0	17	74	0	0	0	1	0	0
+fsh-generated/resources/ValueSet-VSTipoEventoTEI.json	486	4	0	0	0	0	0	0	0	5	0	0	0	0	0	0	0	0	0	0	16	47	0	0	0	0	0	0

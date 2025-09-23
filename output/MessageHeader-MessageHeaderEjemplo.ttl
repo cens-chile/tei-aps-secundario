@@ -1,0 +1,42 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://interoperabilidad.minsal.cl/fhir/ig/tei-aps-secundario/MessageHeader/MessageHeaderEjemplo> a fhir:MessageHeader ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "MessageHeaderEjemplo"] ; # 
+  fhir:meta [
+     fhir:lastUpdated [ fhir:v "2025-07-24T10:21:55-04:00"^^xsd:dateTime ] ;
+     fhir:profile ( [
+       fhir:v "https://interoperabilidad.minsal.cl/fhir/ig/tei-aps-secundario/StructureDefinition/MessageHeaderTEI"^^xsd:anyURI ;
+       fhir:link <https://interoperabilidad.minsal.cl/fhir/ig/tei-aps-secundario/StructureDefinition/MessageHeaderTEI>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: MessageHeader MessageHeaderEjemplo</b></p><a name=\"MessageHeaderEjemplo\"> </a><a name=\"hcMessageHeaderEjemplo\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Last updated: 2025-07-24 10:21:55-0400</p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-MessageHeaderTEI.html\">MessageHeaderTEI</a></p></div><p><b>event</b>: <a href=\"CodeSystem-CSTipoEventoTEI.html#CSTipoEventoTEI-resumir-aps\">Tipo de Evento resumir-aps</a>: Resumir eventos APS</p><p><b>author</b>: <a href=\"Bundle-BundleEnriquecidoEjemplo.html#PractitionerRole_PractitionerRoleReferenciador\">Bundle: type = message; timestamp = 2025-07-24 10:21:55-0400</a></p><h3>Sources</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Software</b></td><td><b>Endpoint</b></td></tr><tr><td style=\"display: none\">*</td><td>Mi Software</td><td>endpoint.dominio.cl</td></tr></table><p><b>focus</b>: <a href=\"ServiceRequest-SolicitudInterconsultaEjemplo.html\">ServiceRequest Patient referral to specialist</a></p></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:event [
+     a fhir:Coding ;
+     fhir:system [ fhir:v "https://interoperabilidad.minsal.cl/fhir/ig/tei-aps-secundario/CodeSystem/CSTipoEventoTEI"^^xsd:anyURI ] ;
+     fhir:code [ fhir:v "resumir-aps" ]
+  ] ; # 
+  fhir:author [
+     fhir:link <https://interoperabilidad.minsal.cl/fhir/ig/tei-aps-secundario/PractitionerRole/PractitionerRoleReferenciador> ;
+     fhir:reference [ fhir:v "PractitionerRole/PractitionerRoleReferenciador" ]
+  ] ; # 
+  fhir:source [
+     fhir:software [ fhir:v "Mi Software" ] ;
+     fhir:endpoint [ fhir:v "endpoint.dominio.cl"^^xsd:anyURI ]
+  ] ; # 
+  fhir:focus ( [
+     fhir:link <https://interoperabilidad.minsal.cl/fhir/ig/tei-aps-secundario/ServiceRequest/SolicitudInterconsultaEjemplo> ;
+     fhir:reference [ fhir:v "ServiceRequest/SolicitudInterconsultaEjemplo" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+
