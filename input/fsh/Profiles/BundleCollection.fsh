@@ -24,14 +24,13 @@ Description: "Bundle Collection"
 
 * entry[bundleIniciar].fullUrl 0..1 MS 
 * entry[bundleIniciar].resource 1..1 MS 
-* entry[bundleIniciar].resource only BundleIniciarEnriquecido
+* entry[bundleIniciar].resource only BundleIniciarLE
 
 * entry[bundleReferenciar].fullUrl 0..1 MS 
 * entry[bundleReferenciar].resource 1..1 MS 
-* entry[bundleRevisar].resource only Bundle
-// * entry[bundleReferenciar].resource only BundleReferenciarLE
+* entry[bundleReferenciar].resource only BundleReferenciarLE
+
 
 * entry[bundleRevisar].fullUrl 0..1 MS 
 * entry[bundleRevisar].resource 1..1 MS 
-* entry[bundleRevisar].resource only Bundle
-// * entry[bundleRevisar].resource only BundleRevisarLE
+* entry[bundleRevisar].resource only BundleRevisarLE

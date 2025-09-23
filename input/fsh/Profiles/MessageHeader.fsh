@@ -1,6 +1,6 @@
 Profile: MessageHeaderTEI
 Parent: MessageHeader
-Description: "Perfil de MessageHeader específico para cierto evento de TEI."
+Description: "Perfil de MessageHeader específico para eventos APS-Secundario"
 
 * id 0..1 MS
 

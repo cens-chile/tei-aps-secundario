@@ -2,11 +2,10 @@
 // Condition: Diagnóstico TEI
 // ===============================
 Instance: ConditionDiagnosticoTEIEjemplo
-InstanceOf: Condition
+InstanceOf: ConditionDiagnosticoLE
 Usage: #example
 Title: "Ejemplo de Condition Diagnóstico TEI"
-* id = "f422e53e-82a5-4798-8845-1902b0330ddc"
-* meta.profile = "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ConditionDiagnosticoTEI"
+
 * clinicalStatus.coding[0].system = "http://terminology.hl7.org/CodeSystem/condition-clinical"
 * clinicalStatus.coding[0].code = #active
 * clinicalStatus.coding[0].display = "Active"

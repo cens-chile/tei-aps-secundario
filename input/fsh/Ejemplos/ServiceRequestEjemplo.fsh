@@ -17,10 +17,10 @@ Usage: #example
   * coding = http://snomed.info/sct#103696004
   * text = "Interconsulta para atención presencial"
 
-* subject = Reference(PatientTEIEjemplo)
+* subject = Reference(EjemploPatientLE)
 * encounter = Reference(EncounterIniciarTEIEjemplo)
 * authoredOn = "2024-12-10T09:00:00Z"
-* requester = Reference(PractitionerRoleTEIEjemplo)
+* requester = Reference(PractitionerRoleReferenciador)
 * locationCode
   * coding =  CSDestinoReferenciaCodigo#1 "Nivel Secundario"
 * reasonCode

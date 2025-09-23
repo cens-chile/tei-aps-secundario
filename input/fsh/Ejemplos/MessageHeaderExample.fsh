@@ -2,17 +2,16 @@ Instance: MessageHeaderEjemplo
 InstanceOf: MessageHeaderTEI
 Usage: #example
 
-* id = "messageheader"
 
 * meta.lastUpdated = "2025-07-24T10:21:55-04:00"
 
 * eventCoding.system = "https://interoperabilidad.minsal.cl/fhir/ig/tei-aps-secundario/CodeSystem/CSTipoEventoTEI"
-* eventCoding.code = #resumir
+* eventCoding.code = #resumir-aps
 
-* source.software = "RAYEN"
-* source.endpoint = "interoperabilidad.saludenred.cl"
+* source.software = "Mi Software"
+* source.endpoint = "endpoint.dominio.cl"
 
-* author = Reference(PractitionerRoleTEIEjemplo)
+* author = Reference(PractitionerRoleReferenciador)
 
 * focus = Reference(SolicitudInterconsultaEjemplo)
 

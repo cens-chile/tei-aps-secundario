@@ -1,9 +1,8 @@
 Instance: QuestionnaireResponseIniciarTEIEjemplo
-InstanceOf: QuestionnaireResponse
+InstanceOf: QuestionnaireResponseIniciarLE
 Usage: #example
 Title: "Ejemplo de QuestionnaireResponse Iniciar TEI"
-* id = "5532ced7-4242-474c-aa98-f8029c292a26"
-* meta.profile = "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/QuestionnaireResponseIniciarTEI"
+
 * questionnaire = "https://interoperabilidad.minsal.cl/fhir/ig/tei/Questionnaire/MotivoDerivacion"
 * status = #completed
 * subject = Reference(Patient/07216d5b-1662-46ac-a041-20a40f2b3881)

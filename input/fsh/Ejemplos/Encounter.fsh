@@ -1,10 +1,7 @@
 Instance: EncounterIniciarTEIEjemplo
-InstanceOf: Encounter
+InstanceOf: EncounterIniciarLE
 Title: "Encounter de ejemplo"
 Usage: #example
-* id =  "00e2816a-2737-478f-8a48-796c2e0a794c"
-
-* meta.profile[0] = "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/EncounterIniciarTEI"
 
 * extension[0].url = "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ExtensionConsecuenciaAtencionCodigo"
 * extension[0].valueCodeableConcept.coding[0].system = "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSConsecuenciaAtencionCodigo"
