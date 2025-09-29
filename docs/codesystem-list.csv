@@ -1,3 +1,0 @@
-URL,Version,Status,OIDs,Name,Title,Description,Used
-https://interoperabilidad.minsal.cl/fhir/ig/tei-aps-secundario/CodeSystem/CSPrevision,0.1.0,active,,CSPrevision,CS Prevision,"Codigos de la previsión del paciente",
-https://interoperabilidad.minsal.cl/fhir/ig/tei-aps-secundario/CodeSystem/CSTipoEventoTEI,0.1.0,draft,,CSTipoEventoTEI,Tipo de Evento,"CodeSystem con códigos definidos para representar cada evento en APS-Secundario",
