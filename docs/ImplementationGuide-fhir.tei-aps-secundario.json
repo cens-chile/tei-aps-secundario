@@ -10,7 +10,7 @@
   "name" : "IGMensajeTEIAPSanivelsecundario",
   "title" : "Mensaje TEI - APS a nivel secundario",
   "status" : "draft",
-  "date" : "2025-09-23T18:02:15-03:00",
+  "date" : "2025-09-30T00:48:00-03:00",
   "publisher" : "CENS",
   "contact" : [{
     "name" : "CENS",
@@ -732,8 +732,20 @@
       "reference" : {
         "reference" : "Coverage/EjemploPrevison"
       },
-      "name" : "Ejemplo de Previsión",
-      "description" : "Ejemplo del perfil de Previsión",
+      "name" : "Ejemplo de Previsión Fonasa",
+      "description" : "Ejemplo del perfil de Previsión Fonasa y Prais",
+      "exampleCanonical" : "https://interoperabilidad.minsal.cl/fhir/ig/tei-aps-secundario/StructureDefinition/Prevision"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Coverage"
+      }],
+      "reference" : {
+        "reference" : "Coverage/EjemploPrevison2"
+      },
+      "name" : "Ejemplo de Previsión Isapr",
+      "description" : "Ejemplo del perfil de Previsión Isapre",
       "exampleCanonical" : "https://interoperabilidad.minsal.cl/fhir/ig/tei-aps-secundario/StructureDefinition/Prevision"
     },
     {

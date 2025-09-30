@@ -18,7 +18,7 @@
   fhir:name [ fhir:v "IGMensajeTEIAPSanivelsecundario"] ; # 
   fhir:title [ fhir:v "Mensaje TEI - APS a nivel secundario"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2025-09-23T18:02:15-03:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-09-30T00:48:00-03:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "CENS"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "CENS" ] ;
@@ -1023,8 +1023,27 @@
          fhir:link <https://interoperabilidad.minsal.cl/fhir/ig/tei-aps-secundario/Coverage/EjemploPrevison> ;
          fhir:reference [ fhir:v "Coverage/EjemploPrevison" ]
        ] ;
-       fhir:name [ fhir:v "Ejemplo de Previsión" ] ;
-       fhir:description [ fhir:v "Ejemplo del perfil de Previsión" ] ;
+       fhir:name [ fhir:v "Ejemplo de Previsión Fonasa" ] ;
+       fhir:description [ fhir:v "Ejemplo del perfil de Previsión Fonasa y Prais" ] ;
+       fhir:example [
+         a fhir:canonical ;
+         fhir:v "https://interoperabilidad.minsal.cl/fhir/ig/tei-aps-secundario/StructureDefinition/Prevision"^^xsd:anyURI ;
+         fhir:link <https://interoperabilidad.minsal.cl/fhir/ig/tei-aps-secundario/StructureDefinition/Prevision>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Coverage"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://interoperabilidad.minsal.cl/fhir/ig/tei-aps-secundario/Coverage/EjemploPrevison2> ;
+         fhir:reference [ fhir:v "Coverage/EjemploPrevison2" ]
+       ] ;
+       fhir:name [ fhir:v "Ejemplo de Previsión Isapr" ] ;
+       fhir:description [ fhir:v "Ejemplo del perfil de Previsión Isapre" ] ;
        fhir:example [
          a fhir:canonical ;
          fhir:v "https://interoperabilidad.minsal.cl/fhir/ig/tei-aps-secundario/StructureDefinition/Prevision"^^xsd:anyURI ;

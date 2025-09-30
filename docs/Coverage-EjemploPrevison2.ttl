@@ -1,0 +1,48 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://interoperabilidad.minsal.cl/fhir/ig/tei-aps-secundario/Coverage/EjemploPrevison2> a fhir:Coverage ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "EjemploPrevison2"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://interoperabilidad.minsal.cl/fhir/ig/tei-aps-secundario/StructureDefinition/Prevision"^^xsd:anyURI ;
+       fhir:link <https://interoperabilidad.minsal.cl/fhir/ig/tei-aps-secundario/StructureDefinition/Prevision>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Coverage EjemploPrevison2</b></p><a name=\"EjemploPrevison2\"> </a><a name=\"hcEjemploPrevison2\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-Prevision.html\">Prevision</a></p></div><p><b>status</b>: Active</p><p><b>type</b>: <span title=\"Codes:{https://interoperabilidad.minsal.cl/fhir/ig/tei-aps-secundario/CodeSystem/CSPrevision 02}\">ISAPRE</span></p><p><b>beneficiary</b>: <a href=\"Bundle-BundleEnriquecidoEjemplo.html#Patient_EjemploPatientLE\">Bundle: type = message; timestamp = 2025-07-24 10:21:55-0400</a></p><p><b>payor</b>: Isapre</p><h3>Classes</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Value</b></td><td><b>Name</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:\">class</span></td><td>A</td><td>Isapre Los Palermos</td></tr></table></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:type [
+     fhir:coding ( [
+       fhir:system [ fhir:v "https://interoperabilidad.minsal.cl/fhir/ig/tei-aps-secundario/CodeSystem/CSPrevision"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "02" ] ;
+       fhir:display [ fhir:v "ISAPRE" ]
+     ] )
+  ] ; # 
+  fhir:beneficiary [
+     fhir:link <https://interoperabilidad.minsal.cl/fhir/ig/tei-aps-secundario/Patient/EjemploPatientLE> ;
+     fhir:reference [ fhir:v "Patient/EjemploPatientLE" ]
+  ] ; # 
+  fhir:payor ( [
+     fhir:display [ fhir:v "Isapre" ]
+  ] ) ; # 
+  fhir:class ( [
+     fhir:type [
+       fhir:coding ( [
+         fhir:code [ fhir:v "class" ]
+       ] )
+     ] ;
+     fhir:value [ fhir:v "A" ] ;
+     fhir:name [ fhir:v "Isapre Los Palermos" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

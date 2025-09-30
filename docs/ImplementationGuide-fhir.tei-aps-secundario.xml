@@ -11,7 +11,7 @@
   <name value="IGMensajeTEIAPSanivelsecundario"/>
   <title value="Mensaje TEI - APS a nivel secundario"/>
   <status value="draft"/>
-  <date value="2025-09-23T18:02:15-03:00"/>
+  <date value="2025-09-30T00:48:00-03:00"/>
   <publisher value="CENS"/>
   <contact>
     <name value="CENS"/>
@@ -565,8 +565,19 @@
       <reference>
         <reference value="Coverage/EjemploPrevison"/>
       </reference>
-      <name value="Ejemplo de Previsión"/>
-      <description value="Ejemplo del perfil de Previsión"/>
+      <name value="Ejemplo de Previsión Fonasa"/>
+      <description value="Ejemplo del perfil de Previsión Fonasa y Prais"/>
+      <exampleCanonical value="https://interoperabilidad.minsal.cl/fhir/ig/tei-aps-secundario/StructureDefinition/Prevision"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Coverage"/>
+      </extension>
+      <reference>
+        <reference value="Coverage/EjemploPrevison2"/>
+      </reference>
+      <name value="Ejemplo de Previsión Isapr"/>
+      <description value="Ejemplo del perfil de Previsión Isapre"/>
       <exampleCanonical value="https://interoperabilidad.minsal.cl/fhir/ig/tei-aps-secundario/StructureDefinition/Prevision"/>
     </resource>
     <resource>

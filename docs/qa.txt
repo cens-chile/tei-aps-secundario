@@ -1,9 +1,9 @@
 IGMensajeTEIAPSanivelsecundario : Validation Results
 =========================================
 
-err = 89, warn = 105, info = 242
+err = 90, warn = 106, info = 242
 IG Publisher Version: 2.0.17
-Generated Tue Sep 23 18:03:50 CLST 2025. FHIR version 4.0.1 for fhir.tei-aps-secundario#0.1.0 (canonical = https://interoperabilidad.minsal.cl/fhir/ig/tei-aps-secundario)
+Generated Tue Sep 30 00:49:34 CLST 2025. FHIR version 4.0.1 for fhir.tei-aps-secundario#0.1.0 (canonical = https://interoperabilidad.minsal.cl/fhir/ig/tei-aps-secundario)
  Build Errors : 8 / 14 / 0
  /home/jano/Projects/TEI-2025/tei-aps-secundario/fsh-generated/resources/Bundle-BundleEnriquecidoEjemplo : 40 / 21 / 55
  /home/jano/Projects/TEI-2025/tei-aps-secundario/fsh-generated/resources/Bundle-BundleIniciarEjemplo : 0 / 14 / 68
@@ -14,6 +14,7 @@ Generated Tue Sep 23 18:03:50 CLST 2025. FHIR version 4.0.1 for fhir.tei-aps-sec
  /home/jano/Projects/TEI-2025/tei-aps-secundario/fsh-generated/resources/CodeSystem-CSTipoEventoTEI : 0 / 0 / 1
  /home/jano/Projects/TEI-2025/tei-aps-secundario/fsh-generated/resources/Condition-ConditionDiagnosticoTEIEjemplo : 6 / 0 / 1
  /home/jano/Projects/TEI-2025/tei-aps-secundario/fsh-generated/resources/Coverage-EjemploPrevison : 1 / 1 / 1
+ /home/jano/Projects/TEI-2025/tei-aps-secundario/fsh-generated/resources/Coverage-EjemploPrevison2 : 1 / 1 / 1
  /home/jano/Projects/TEI-2025/tei-aps-secundario/fsh-generated/resources/Encounter-EncounterIniciarTEIEjemplo : 6 / 0 / 3
  /home/jano/Projects/TEI-2025/tei-aps-secundario/fsh-generated/resources/ImplementationGuide-fhir.tei-aps-secundario : 0 / 1 / 1
  /home/jano/Projects/TEI-2025/tei-aps-secundario/fsh-generated/resources/MessageHeader-MessageHeaderEjemplo : 1 / 1 / 2
@@ -453,6 +454,9 @@ ERROR: Condition.text.div: Hyperlink 'Encounter/00e2816a-2737-478f-8a48-796c2e0a
 == fsh-generated/resources/Coverage-EjemploPrevison.json ==
 WARNING: Coverage/EjemploPrevison: Coverage.class[0].type.coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
 ERROR: Coverage/EjemploPrevison: Coverage: Constraint failed: tramo-fonasa: 'Si tipo(type) es (01)Fonasa, se debe definir el tramo(class). If type.coding.code = 01 class SHALL be present' (defined in https://interoperabilidad.minsal.cl/fhir/ig/tei-aps-secundario/StructureDefinition/Prevision)
+== fsh-generated/resources/Coverage-EjemploPrevison2.json ==
+WARNING: Coverage/EjemploPrevison2: Coverage.class[0].type.coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+ERROR: Coverage/EjemploPrevison2: Coverage: Constraint failed: tramo-fonasa: 'Si tipo(type) es (01)Fonasa, se debe definir el tramo(class). If type.coding.code = 01 class SHALL be present' (defined in https://interoperabilidad.minsal.cl/fhir/ig/tei-aps-secundario/StructureDefinition/Prevision)
 == fsh-generated/resources/Encounter-EncounterIniciarTEIEjemplo.json ==
 INFORMATION: Encounter/EncounterIniciarTEIEjemplo: Encounter.extension[0].value.ofType(CodeableConcept).coding[0].display: 'Derivación' is the default display; the code system https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSConsecuenciaAtencionCodigo has no Display Names for the language en-US
 INFORMATION: Encounter/EncounterIniciarTEIEjemplo: Encounter.class.display: 'Presencial' is the default display; the code system https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSModalidadAtencionCodigo has no Display Names for the language en-US
@@ -494,6 +498,6 @@ ERROR: StructureDefinition/ExtensionBoolPrais: StructureDefinition.context[0]: T
 == fsh-generated/resources/StructureDefinition-Prevision.json ==
 WARNING: StructureDefinition/Prevision: StructureDefinition.snapshot.element[42].pattern.ofType(CodeableConcept).coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
 WARNING: StructureDefinition/Prevision: StructureDefinition.differential.element[13].pattern.ofType(CodeableConcept).coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
-ERROR: StructureDefinition/Prevision: StructureDefinition.snapshot.element[0].constraint[5]: Error in constraint 'tramo-fonasa' with expression 'type.code = '01' and class.exists() and (class.value = 'A' or class.value = 'B' or class.value = 'C' or class.value = 'D')': Error evaluating FHIRPath expression: The name 'code' is not valid for any of the possible types: [http://hl7.org/fhir/StructureDefinition/CodeableConcept] (@char 6)
+ERROR: StructureDefinition/Prevision: StructureDefinition.snapshot.element[0].constraint[5]: Error in constraint 'tramo-fonasa' with expression '(type.code = '01' and class.exists() and (class.value = 'A' or class.value = 'B' or class.value = 'C' or class.value = 'D'))': Error evaluating FHIRPath expression: The name 'code' is not valid for any of the possible types: [http://hl7.org/fhir/StructureDefinition/CodeableConcept] (@char 7)
 == fsh-generated/resources/ValueSet-VSPrevision.json ==
 == fsh-generated/resources/ValueSet-VSTipoEventoTEI.json ==
