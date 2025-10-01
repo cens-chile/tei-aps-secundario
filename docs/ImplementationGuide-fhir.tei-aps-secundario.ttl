@@ -18,7 +18,7 @@
   fhir:name [ fhir:v "IGMensajeTEIAPSanivelsecundario"] ; # 
   fhir:title [ fhir:v "Mensaje TEI - APS a nivel secundario"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2025-09-30T00:48:00-03:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-10-01T13:03:17-03:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "CENS"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "CENS" ] ;
@@ -1042,7 +1042,7 @@
          fhir:link <https://interoperabilidad.minsal.cl/fhir/ig/tei-aps-secundario/Coverage/EjemploPrevison2> ;
          fhir:reference [ fhir:v "Coverage/EjemploPrevison2" ]
        ] ;
-       fhir:name [ fhir:v "Ejemplo de Previsión Isapr" ] ;
+       fhir:name [ fhir:v "Ejemplo de Previsión Isapre" ] ;
        fhir:description [ fhir:v "Ejemplo del perfil de Previsión Isapre" ] ;
        fhir:example [
          a fhir:canonical ;

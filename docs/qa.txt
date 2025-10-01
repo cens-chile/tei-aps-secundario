@@ -2,8 +2,8 @@ IGMensajeTEIAPSanivelsecundario : Validation Results
 =========================================
 
 err = 90, warn = 106, info = 242
-IG Publisher Version: 2.0.17
-Generated Tue Sep 30 00:49:34 CLST 2025. FHIR version 4.0.1 for fhir.tei-aps-secundario#0.1.0 (canonical = https://interoperabilidad.minsal.cl/fhir/ig/tei-aps-secundario)
+IG Publisher Version: 2.0.17 Out of date - current version is 2.0.18
+Generated Wed Oct 01 13:05:52 CLST 2025. FHIR version 4.0.1 for fhir.tei-aps-secundario#0.1.0 (canonical = https://interoperabilidad.minsal.cl/fhir/ig/tei-aps-secundario)
  Build Errors : 8 / 14 / 0
  /home/jano/Projects/TEI-2025/tei-aps-secundario/fsh-generated/resources/Bundle-BundleEnriquecidoEjemplo : 40 / 21 / 55
  /home/jano/Projects/TEI-2025/tei-aps-secundario/fsh-generated/resources/Bundle-BundleIniciarEjemplo : 0 / 14 / 68
