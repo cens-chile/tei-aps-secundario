@@ -23,13 +23,13 @@ Usage: #inline
 Instance: EjemploPrevison2
 InstanceOf: Prevision
 Usage: #example
-Title: "Ejemplo de Previsión Isapr"
+Title: "Ejemplo de Previsión Isapre"
 Description: "Ejemplo del perfil de Previsión Isapre"
 
 * status = #active
 * type = https://interoperabilidad.minsal.cl/fhir/ig/tei-aps-secundario/CodeSystem/CSPrevision#02 "ISAPRE"
 * beneficiary = Reference(EjemploPatientLE)
 * class[+].type = #class
-* class[=].value = "A"
+* class[=].value = "Los Palermos"
 * class[=].name = "Isapre Los Palermos"
 * payor.display = "Isapre"
