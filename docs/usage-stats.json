@@ -9,6 +9,13 @@
       "types": [
         "boolean"
       ]
+    },
+    {
+      "url": "https://interoperabilidad.minsal.cl/fhir/ig/tei-aps-secundario/StructureDefinition/ExtensionCodeableConceptTipoProfesionalDestino",
+      "title": "TipoProfesionalDestino",
+      "types": [
+        "CodeableConcept"
+      ]
     }
   ],
   "profiles": {
@@ -103,6 +110,9 @@
     ],
     "https://interoperabilidad.minsal.cl/fhir/ig/tei-aps-secundario/StructureDefinition/ExtensionBoolPrais": [
       "Coverage"
+    ],
+    "https://interoperabilidad.minsal.cl/fhir/ig/tei-aps-secundario/StructureDefinition/ExtensionCodeableConceptTipoProfesionalDestino": [
+      "PractitionerRole"
     ],
     "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ExtensionBoolRequiereExamen": [
       "Bundle.entry.resource",

@@ -18,7 +18,7 @@
   fhir:name [ fhir:v "IGMensajeTEIAPSanivelsecundario"] ; # 
   fhir:title [ fhir:v "Mensaje TEI - APS a nivel secundario"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2025-10-01T13:03:17-03:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-10-07T23:46:48-03:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "CENS"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "CENS" ] ;
@@ -1161,6 +1161,23 @@
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [
            a fhir:string ;
+           fhir:v "PractitionerRole"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://interoperabilidad.minsal.cl/fhir/ig/tei-aps-secundario/PractitionerRole/PractitionerRoleAtendedor2> ;
+         fhir:reference [ fhir:v "PractitionerRole/PractitionerRoleAtendedor2" ]
+       ] ;
+       fhir:name [ fhir:v "PractitionerRoleAtendedor2" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v true
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
            fhir:v "StructureDefinition:resource"
          ]
        ] ) ;
@@ -1223,6 +1240,24 @@
        ] ;
        fhir:name [ fhir:v "Tipo de Evento" ] ;
        fhir:description [ fhir:v "CodeSystem con códigos definidos para representar cada evento en APS-Secundario" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:extension"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://interoperabilidad.minsal.cl/fhir/ig/tei-aps-secundario/StructureDefinition/ExtensionCodeableConceptTipoProfesionalDestino> ;
+         fhir:reference [ fhir:v "StructureDefinition/ExtensionCodeableConceptTipoProfesionalDestino" ]
+       ] ;
+       fhir:name [ fhir:v "TipoProfesionalDestino" ] ;
+       fhir:description [ fhir:v "Extensión para representar opcionalmente el tipo de profesional de destino en el perfil de PractitionerRoleLE." ] ;
        fhir:example [
          a fhir:boolean ;
          fhir:v false

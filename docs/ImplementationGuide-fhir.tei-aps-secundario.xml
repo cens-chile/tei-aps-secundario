@@ -11,7 +11,7 @@
   <name value="IGMensajeTEIAPSanivelsecundario"/>
   <title value="Mensaje TEI - APS a nivel secundario"/>
   <status value="draft"/>
-  <date value="2025-10-01T13:03:17-03:00"/>
+  <date value="2025-10-07T23:46:48-03:00"/>
   <publisher value="CENS"/>
   <contact>
     <name value="CENS"/>
@@ -645,6 +645,16 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="PractitionerRole"/>
+      </extension>
+      <reference>
+        <reference value="PractitionerRole/PractitionerRoleAtendedor2"/>
+      </reference>
+      <name value="PractitionerRoleAtendedor2"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
@@ -684,6 +694,17 @@
       </reference>
       <name value="Tipo de Evento"/>
       <description value="CodeSystem con códigos definidos para representar cada evento en APS-Secundario"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ExtensionCodeableConceptTipoProfesionalDestino"/>
+      </reference>
+      <name value="TipoProfesionalDestino"/>
+      <description value="Extensión para representar opcionalmente el tipo de profesional de destino en el perfil de PractitionerRoleLE."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>

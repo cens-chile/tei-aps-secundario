@@ -1,9 +1,9 @@
 IGMensajeTEIAPSanivelsecundario : Validation Results
 =========================================
 
-err = 90, warn = 106, info = 242
-IG Publisher Version: 2.0.17 Out of date - current version is 2.0.18
-Generated Wed Oct 01 13:05:52 CLST 2025. FHIR version 4.0.1 for fhir.tei-aps-secundario#0.1.0 (canonical = https://interoperabilidad.minsal.cl/fhir/ig/tei-aps-secundario)
+err = 91, warn = 106, info = 244
+IG Publisher Version: 2.0.17 Out of date - current version is 2.0.19
+Generated Tue Oct 07 23:48:16 CLST 2025. FHIR version 4.0.1 for fhir.tei-aps-secundario#0.1.0 (canonical = https://interoperabilidad.minsal.cl/fhir/ig/tei-aps-secundario)
  Build Errors : 8 / 14 / 0
  /home/jano/Projects/TEI-2025/tei-aps-secundario/fsh-generated/resources/Bundle-BundleEnriquecidoEjemplo : 40 / 21 / 55
  /home/jano/Projects/TEI-2025/tei-aps-secundario/fsh-generated/resources/Bundle-BundleIniciarEjemplo : 0 / 14 / 68
@@ -20,11 +20,13 @@ Generated Wed Oct 01 13:05:52 CLST 2025. FHIR version 4.0.1 for fhir.tei-aps-sec
  /home/jano/Projects/TEI-2025/tei-aps-secundario/fsh-generated/resources/MessageHeader-MessageHeaderEjemplo : 1 / 1 / 2
  /home/jano/Projects/TEI-2025/tei-aps-secundario/fsh-generated/resources/Observation-08af5b38-add5-4c44-b14d-7995012b63ee : 0 / 2 / 1
  /home/jano/Projects/TEI-2025/tei-aps-secundario/fsh-generated/resources/Observation-a06a9b26-9d06-43d2-9606-2a6ae4a23207 : 0 / 2 / 1
+ /home/jano/Projects/TEI-2025/tei-aps-secundario/fsh-generated/resources/PractitionerRole-PractitionerRoleAtendedor2 : 0 / 0 / 3
  /home/jano/Projects/TEI-2025/tei-aps-secundario/fsh-generated/resources/QuestionnaireResponse-QuestionnaireResponseIniciarTEIEjemplo : 3 / 0 / 1
  /home/jano/Projects/TEI-2025/tei-aps-secundario/fsh-generated/resources/ServiceRequest-SolicitudInterconsultaEjemplo : 1 / 0 / 6
  /home/jano/Projects/TEI-2025/tei-aps-secundario/fsh-generated/resources/StructureDefinition-BundleCollection : 0 / 0 / 2
  /home/jano/Projects/TEI-2025/tei-aps-secundario/fsh-generated/resources/StructureDefinition-BundleEnriquecido : 0 / 0 / 1
  /home/jano/Projects/TEI-2025/tei-aps-secundario/fsh-generated/resources/StructureDefinition-ExtensionBoolPrais : 1 / 0 / 1
+ /home/jano/Projects/TEI-2025/tei-aps-secundario/fsh-generated/resources/StructureDefinition-ExtensionCodeableConceptTipoProfesionalDestino : 1 / 0 / 1
  /home/jano/Projects/TEI-2025/tei-aps-secundario/fsh-generated/resources/StructureDefinition-MessageHeaderTEI : 0 / 0 / 1
  /home/jano/Projects/TEI-2025/tei-aps-secundario/fsh-generated/resources/StructureDefinition-Prevision : 1 / 2 / 1
  /home/jano/Projects/TEI-2025/tei-aps-secundario/fsh-generated/resources/ValueSet-VSPrevision : 0 / 0 / 1
@@ -40,6 +42,7 @@ WARNING: Unable to find ImplementationGuide.definition.resource.description for 
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource QuestionnaireResponse/QuestionnaireResponseIniciarTEIEjemplo.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Encounter/EncounterIniciarTEIEjemplo.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource MessageHeader/MessageHeaderEjemplo.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource PractitionerRole/PractitionerRoleAtendedor2.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource ServiceRequest/SolicitudInterconsultaEjemplo.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 ERROR: Bundle-BundleEnriquecidoEjemplo.html#/html/body/div/div/div/div/div/div/blockquote/p/a at Line 170, column 5358: The link 'Patient/07216d5b-1662-46ac-a041-20a40f2b3881' for "Patient/07216d5b-1662-46ac-a041-20a40f2b3881" cannot be resolved
 ERROR: Bundle-BundleEnriquecidoEjemplo.html#/html/body/div/div/div/div/div/div/blockquote/p/a at Line 170, column 10451: The link 'Patient/07216d5b-1662-46ac-a041-20a40f2b3881' for "Patient/07216d5b-1662-46ac-a041-20a40f2b3881" cannot be resolved
@@ -51,7 +54,6 @@ ERROR: Encounter-EncounterIniciarTEIEjemplo.html#/html/body/div/div/div/div/div/
 ERROR: Encounter-EncounterIniciarTEIEjemplo.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 170, column 1606: The link 'Condition/f422e53e-82a5-4798-8845-1902b0330ddc' for "Condition/f422e53e-82a5-4798-8845-1902b0330ddc" cannot be resolved
 WARNING: 1: The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide
 WARNING: 2: An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide
-WARNING: 3: An HTML fragment from the set [dependency-table.xhtml, dependency-table-short.xhtml, dependency-table-nontech.xhtml] is not included anywhere in the produced implementation guide
 WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide
 == fsh-generated/resources/Bundle-BundleEnriquecidoEjemplo.json ==
 ERROR: Bundle/BundleEnriquecidoEjemplo: Bundle.entry[3]: Profile https://interoperabilidad.minsal.cl/fhir/ig/tei-aps-secundario/StructureDefinition/BundleEnriquecido|0.1.0, Element matches more than one slice - patient, observation
@@ -467,7 +469,7 @@ ERROR: Encounter.text.div: Hyperlink 'Patient/07216d5b-1662-46ac-a041-20a40f2b38
 ERROR: Encounter.text.div: Hyperlink 'PractitionerRole/71c67974-99f2-4537-8956-4391865cba48' at 'div/table/tr/td/a' for 'PractitionerRole/71c67974-99f2-4537-8956-4391865cba48' does not resolve
 ERROR: Encounter.text.div: Hyperlink 'Condition/f422e53e-82a5-4798-8845-1902b0330ddc' at 'div/table/tr/td/a' for 'Condition/f422e53e-82a5-4798-8845-1902b0330ddc' does not resolve
 == fsh-generated/resources/ImplementationGuide-fhir.tei-aps-secundario.json ==
-WARNING: ImplementationGuide/fhir.tei-aps-secundario: ImplementationGuide.dependsOn[3]: The ImplementationGuide uses package hl7.fhir.cl.clcore#1.9.2 released on 2024-12-11, but the most recent appropriate version is 1.9.3. This reference is getting old and the more recent version should be considered
+WARNING: ImplementationGuide/fhir.tei-aps-secundario: ImplementationGuide.dependsOn[3]: The ImplementationGuide uses package hl7.fhir.cl.clcore#1.9.2 released on 2024-12-11, but the most recent appropriate version is 1.9.4. This reference is getting old and the more recent version should be considered
 == fsh-generated/resources/MessageHeader-MessageHeaderEjemplo.json ==
 INFORMATION: MessageHeader/MessageHeaderEjemplo: MessageHeader.event.ofType(Coding): Reference to draft CodeSystem https://interoperabilidad.minsal.cl/fhir/ig/tei-aps-secundario/CodeSystem/CSTipoEventoTEI|0.1.0
 ERROR: MessageHeader/MessageHeaderEjemplo: MessageHeader.author: Unable to resolve resource with reference 'PractitionerRole/PractitionerRoleReferenciador'
@@ -478,6 +480,9 @@ WARNING: Observation/08af5b38-add5-4c44-b14d-7995012b63ee: Observation: Best Pra
 == fsh-generated/resources/Observation-a06a9b26-9d06-43d2-9606-2a6ae4a23207.json ==
 WARNING: Observation/a06a9b26-9d06-43d2-9606-2a6ae4a23207: Observation: Best Practice Recommendation: In general, all observations should have a performer
 WARNING: Observation/a06a9b26-9d06-43d2-9606-2a6ae4a23207: Observation: Best Practice Recommendation: In general, all observations should have an effective[x] ()
+== fsh-generated/resources/PractitionerRole-PractitionerRoleAtendedor2.json ==
+INFORMATION: PractitionerRole/PractitionerRoleAtendedor2: PractitionerRole.extension[0].value.ofType(CodeableConcept).coding[0].display: 'MÉDICO CIRUJANO' is the default display; the code system https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSTituloProfesional has no Display Names for the language en-US
+INFORMATION: PractitionerRole/PractitionerRoleAtendedor2: PractitionerRole.code[0].coding[0].display: 'Atendedor' is the default display; the code system https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSPractitionerTipoRolLE has no Display Names for the language en-US
 == fsh-generated/resources/QuestionnaireResponse-QuestionnaireResponseIniciarTEIEjemplo.json ==
 ERROR: QuestionnaireResponse/QuestionnaireResponseIniciarTEIEjemplo: QuestionnaireResponse.subject: Unable to resolve resource with reference 'Patient/07216d5b-1662-46ac-a041-20a40f2b3881'
 ERROR: QuestionnaireResponse/QuestionnaireResponseIniciarTEIEjemplo: QuestionnaireResponse.encounter: Unable to resolve resource with reference 'Encounter/00e2816a-2737-478f-8a48-796c2e0a794c'
@@ -494,6 +499,8 @@ INFORMATION: StructureDefinition/BundleCollection: StructureDefinition.snapshot.
 == fsh-generated/resources/StructureDefinition-BundleEnriquecido.json ==
 == fsh-generated/resources/StructureDefinition-ExtensionBoolPrais.json ==
 ERROR: StructureDefinition/ExtensionBoolPrais: StructureDefinition.context[0]: The element https://interoperabilidad.minsal.cl/fhir/ig/tei-aps-secundario/StructureDefinition/Prevision#Coverage is not valid
+== fsh-generated/resources/StructureDefinition-ExtensionCodeableConceptTipoProfesionalDestino.json ==
+ERROR: StructureDefinition/ExtensionCodeableConceptTipoProfesionalDestino: StructureDefinition.context[0]: The element https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/PractitionerRoleLE#PractitionerRole is not valid
 == fsh-generated/resources/StructureDefinition-MessageHeaderTEI.json ==
 == fsh-generated/resources/StructureDefinition-Prevision.json ==
 WARNING: StructureDefinition/Prevision: StructureDefinition.snapshot.element[42].pattern.ofType(CodeableConcept).coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided

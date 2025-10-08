@@ -1,0 +1,33 @@
+{
+  "resourceType" : "PractitionerRole",
+  "id" : "PractitionerRoleAtendedor2",
+  "meta" : {
+    "versionId" : "1.0",
+    "profile" : ["https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/PractitionerRoleLE"]
+  },
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: PractitionerRole PractitionerRoleAtendedor2</b></p><a name=\"PractitionerRoleAtendedor2\"> </a><a name=\"hcPractitionerRoleAtendedor2\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">version: 1.0</p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://interoperabilidad.minsal.cl/fhir/ig/tei/0.2.1/StructureDefinition-PractitionerRoleLE.html\">PractitionerRole LE</a></p></div><p><b>TipoProfesionalDestino</b>: <span title=\"Codes:{https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSTituloProfesional 1}\">MÉDICO CIRUJANO</span></p><p><b>active</b>: true</p><p><b>organization</b>: <a href=\"Bundle-BundleEnriquecidoEjemplo.html#Organization_OrganizationLEAtendedor\">Bundle: type = message; timestamp = 2025-07-24 10:21:55-0400</a></p><p><b>code</b>: <span title=\"Codes:{https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSPractitionerTipoRolLE atendedor}\">Atendedor</span></p></div>"
+  },
+  "extension" : [{
+    "url" : "https://interoperabilidad.minsal.cl/fhir/ig/tei-aps-secundario/StructureDefinition/ExtensionCodeableConceptTipoProfesionalDestino",
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSTituloProfesional",
+        "code" : "1",
+        "display" : "MÉDICO CIRUJANO"
+      }]
+    }
+  }],
+  "active" : true,
+  "organization" : {
+    "reference" : "Organization/OrganizationLEAtendedor"
+  },
+  "code" : [{
+    "coding" : [{
+      "system" : "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSPractitionerTipoRolLE",
+      "code" : "atendedor",
+      "display" : "Atendedor"
+    }]
+  }]
+}

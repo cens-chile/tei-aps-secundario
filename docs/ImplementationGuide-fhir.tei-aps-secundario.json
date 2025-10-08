@@ -10,7 +10,7 @@
   "name" : "IGMensajeTEIAPSanivelsecundario",
   "title" : "Mensaje TEI - APS a nivel secundario",
   "status" : "draft",
-  "date" : "2025-10-01T13:03:17-03:00",
+  "date" : "2025-10-07T23:46:48-03:00",
   "publisher" : "CENS",
   "contact" : [{
     "name" : "CENS",
@@ -820,6 +820,17 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "PractitionerRole"
+      }],
+      "reference" : {
+        "reference" : "PractitionerRole/PractitionerRoleAtendedor2"
+      },
+      "name" : "PractitionerRoleAtendedor2",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
@@ -862,6 +873,18 @@
       },
       "name" : "Tipo de Evento",
       "description" : "CodeSystem con códigos definidos para representar cada evento en APS-Secundario",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/ExtensionCodeableConceptTipoProfesionalDestino"
+      },
+      "name" : "TipoProfesionalDestino",
+      "description" : "Extensión para representar opcionalmente el tipo de profesional de destino en el perfil de PractitionerRoleLE.",
       "exampleBoolean" : false
     },
     {

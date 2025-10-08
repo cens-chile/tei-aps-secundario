@@ -42,6 +42,13 @@
     "name" : "ExtensionBoolPrais"
   },
   {
+    "id" : "ExtensionCodeableConceptTipoProfesionalDestino",
+    "type" : "StructureDefinition",
+    "url" : "https://interoperabilidad.minsal.cl/fhir/ig/tei-aps-secundario/StructureDefinition/ExtensionCodeableConceptTipoProfesionalDestino",
+    "version" : "0.1.0",
+    "name" : "ExtensionCodeableConceptTipoProfesionalDestino"
+  },
+  {
     "id" : "MessageHeaderTEI",
     "type" : "StructureDefinition",
     "url" : "https://interoperabilidad.minsal.cl/fhir/ig/tei-aps-secundario/StructureDefinition/MessageHeaderTEI",

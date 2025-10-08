@@ -177,6 +177,17 @@
       "ValueSet-VSTipoEventoTEI.html" : "Tipo de Evento"
     },
     {
+      "url" : "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSTituloProfesional",
+      "version" : "0.2.1",
+      "status" : "active",
+      "name" : "CSTituloProfesional",
+      "title" : "TituloProfesional",
+      "description" : "TituloProfesional",
+      "uses" : {
+      },
+      "https://interoperabilidad.minsal.cl/fhir/ig/tei/0.2.1/ValueSet-VSTituloProfesional.html" : "TituloProfesional"
+    },
+    {
       "url" : "urn:ietf:bcp:47",
       "version" : "2.0.1",
       "status" : "active",

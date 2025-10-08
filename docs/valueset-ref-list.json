@@ -41,6 +41,20 @@
       "uses" : {
       },
       "StructureDefinition-MessageHeaderTEI.html" : "MessageHeaderTEI"
+    },
+    {
+      "url" : "https://interoperabilidad.minsal.cl/fhir/ig/tei/ValueSet/VSTituloProfesional",
+      "version" : "0.2.1",
+      "status" : "active",
+      "name" : "VSTituloProfesional",
+      "title" : "TituloProfesional",
+      "description" : "TituloProfesional",
+      "systems" : [
+        "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSTituloProfesional"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-ExtensionCodeableConceptTipoProfesionalDestino.html" : "TipoProfesionalDestino"
     }
   ]
 }
